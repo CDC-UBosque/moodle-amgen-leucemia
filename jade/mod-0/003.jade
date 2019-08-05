@@ -1,0 +1,137 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 0', 'Lineamientos')
+			
+			h3 Cronograma
+			
+			//- Table
+			table.table.table-striped
+				thead
+					tr
+						th Módulos
+						th Actividades
+						th Inicio
+						th Cierre
+				tbody
+					tr
+						td Módulo 0
+						td 
+						td 5 de agosto
+						td 12 de agosto
+					tr
+						td(rowspan='3') Módulo 1
+							br/ 
+							b Generalidades de la leucemia linfoblástica aguda
+						td 
+						td 12 de agosto
+						td 26 de agosto
+					tr
+						td Video Conferencia
+						td 
+						td 21 de agosto 7:00 a 9:00 pm
+					tr
+						td Evaluación
+						td 22 de agosto 
+						td 
+						
+						
+					tr
+						td(rowspan='3') Módulo 2
+							br/ 
+							b Fisiopatología y cuadro clínico
+						td 
+						td 26 de agosto
+						td 9 de septiembre
+					tr
+						td Video Conferencia
+						td 
+						td 4 de septiembre 7:00 a 9:00 pm
+					tr
+						td Evaluación
+						td 5 de septiembre
+						td 
+						
+						
+					tr
+						td(rowspan='3') Módulo 3
+							br/ 
+							b Opciones Terapéuticas
+						td 
+						td 9 de septiembre
+						td 23 de septiembre
+					tr
+						td Video Conferencia
+						td 
+						td 19 de septiembre 7:00 a 9:00 pm
+					tr
+						td Evaluación
+						td 20 de septiembre
+						td 
+						
+						
+					tr
+						td(rowspan='3') Módulo 4
+							br/ 
+							b Preparación Blincito - Buenas prácticas Farmacia
+						td 
+						td 23 de septiembre
+						td 7 de octubre
+					tr
+						td Video Conferencia
+						td 
+						td 2 de octubre 7:00 a 9:00 pm
+					tr
+						td Evaluación
+						td 2 de octubre
+						td 
+						
+						
+					tr
+						td(rowspan='3') Módulo 5
+							br/ 
+							b Administración y buenas prácticas de enfermería
+						td 
+						td 7 de octubre
+						td 21 de octubre
+					tr
+						td Video Conferencia
+						td 
+						td 16 de octubre 7:00 a 9:00 pm
+					tr
+						td Evaluación
+						td 17 de octubre
+						td 
+						
+					tr
+						td(colspan='2') Semana de Recuperación 
+						td(colspan='2') 21 al 25 de octubre
+			
+			
+						
+				
+			
+			
+		//- progreso y contador
+		+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303460&chapterid=9063', 'back', 'Anterior', '#', 'disabled', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -1,0 +1,46 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 0', 'Lineamientos')
+			
+			h3 Carta bienvenida Curso Virtual de Leucemia Linfoblástica Aguda - Universidad El Bosque
+			
+			p Estimad@s participantes:
+
+			p Reciban un especial saludo de bienvenida al curso Virtual de Leucemia Linfoblástica aguda:
+			p En nombre de esta coordinación y de los expertos de diferentes disciplinas que se han encargado del diseño de los contenidos para este curso los cuales los acompañarán en esta experiencia académica, probablemente novedosa para algunos de ustedes y con un enfoque integrativo en los procesos de aprendizaje significativo. 
+			p En este curso se estará abordando de manera integral un tema de interés para todos los profesionales de la salud inmersos en el tratamiento, intervención y cuidado de los pacientes con Leucemia Aguda ya que la complejidad del diagnóstico implica un manejo multidisciplinario en donde debe haber una participación activa y articulada entre el equipo médico, de enfermería y farmacia, que conlleven a un beneficio clínico para nuestros pacientes con LLA.
+			p Se plantean las necesidades de cuidado de las personas desde una visión integrativa del conocimiento desde las generalidades de la leucemia, la fisiopatología, las diversas alternativas de tratamiento y las buenas practicas de farmacia y de enfermería, con énfasis en los medicamentos biotecnológicos, todos estos componentes presentados desde la mejor evidencia disponible enmarcada en la amplia experiencia y experticia de los especialistas tutores que nos acompañan en este aprendizaje.  
+			p Esperamos que los contenidos de este curso contribuyan en el ejercicio profesional de cada uno de ustedes y sea aplicable en el abordaje integral de sus pacientes.
+			
+			h5 María Zoraida Rojas Marín 
+			p Coordinadora Curso LLA
+				br/ 
+				i Universidad El Bosque 
+						
+				
+			
+			
+		//- progreso y contador
+		+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303460&chapterid=9062', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303460&chapterid=9064', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

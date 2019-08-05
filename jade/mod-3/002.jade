@@ -1,0 +1,109 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 3', 'Tratamiento de leucemia linfoblástica aguda')
+			
+			//- banner modulo 1
+			+banner-video('video-mod-3')
+
+				
+			h3 Clasificación y factores de riesgo
+			
+			p La clasificación de la leucemia linfoblástica aguda (LLA) ha evolucionado en el tiempo: La clasificación inicial, conocida como la clasificación Franco-Americano-Británica (FAB - French American British), propuesta en 1976 estaba basada netamente en la morfología celular, estableciendo el tamaño celular, características del citoplasma, nucléolo, presencia o no de vacuolización y basofilia. De esta manera se clasificaba la leucemia como L1, L2 y L3(8). Sin embargo solo hasta 21 años después, en 1997, se hizo la primera propuesta por parte de la Organización mundial de la salud (OMS) de establecer una clasificación basada en la morfología y perfil citogenético de las células tumorales(9). Posteriormente en el 2008, se clasificó la LLA en dos sub tipos grandes: LLA de células B con anormalidades genéticas recurrentes y LLA-B no especificada, eliminándose la leucemia de Burkitt, entidad descrita en la clasificación de 1997, incluyéndose dentro de una misma entidad conjuntamente con el linfoma de Burkitt(10). En el 2016, dos entidades provisionales adicionales se enlistaron en la clasificación de la OMS, caracterizadas por hipodiploidia o hiperdiploidia con mutaciones del TP53(1,2,11). Tabla 1.
+			
+			//- Table
+			table.table.table-striped
+				//- caption 
+				thead
+					tr
+						th Tabla 1. Clasificación de tumores hematopoyéticos y tejidos linfoides - OMS 2016 / Neoplasias de precursores linfoides(1)
+				tbody
+					tr
+						td Leucemia / Linfoma Linfoblástico de células B no especificado
+					tr
+						td Leucemia / Linfoma linfoblástico de células B con anormalidades genéticas recurrentes
+					tr
+						td Leucemia / Linfoma linfoblástico de células B con t(9;22)(q34.1;q11.2); BCR-ABL1
+					tr
+						td Leucemia / Linfoma linfoblástico de células B con t(v;11q23.3);re-arreglos de KMT2A
+					tr
+						td Leucemia / Linfoma linfoblástico de células B con t(12;21)(p13.2;q22.1); ETV6-RUNX1
+					tr
+						td Leucemia / Linfoma linfoblástico de células B  con hiperdiploidia (entidad provisional)
+					tr
+						td Leucemia / Linfoma linfoblástico de células B con hipodiploidia (entidad provisional)
+					tr
+						td Leucemia / Linfoma linfoblástico de células B con t(5;14)(q31.1;q32.1); IGH/IL3
+					tr
+						td Leucemia / Linfoma linfoblástico de células B  con t(1;19)(q23;p13.3); TCF3-PBX1
+					tr
+						td Leucemia / Linfoma linfoblástico de células B, BCR-ABL1-like (entidad provisional)
+					tr
+						td Leucemia / Linfoma linfoblástico de células B  con iAMP21 (entidad provisional)
+					tr
+						td Leucemia / Linfoma linfoblástico de células T
+					tr
+						td Leucemia linfoblástica de precursores tempranos de células T (entidad provisional)
+					tr
+						td Leucemia / Linfoma linfoblástico de células NK (entidad provisional)
+					
+					
+					
+			p Tradicionalmente se han tenido en cuenta algunas características clínicas, como factores pronósticos al momento del diagnóstico, como son la edad y el recuento de leucocitos. El estudio del MRC UKALL XII/ECOG E2993 clasificó la enfermedad dependiendo de la presencia de los factores adversos al momento del debut de la enfermedad: Edad > 35 años, el recuento de leucocitos > 30 x 109 en LLA-B y > 100 x 109 para LLA-T.  La clasificación se hacía en tres grupos dependiendo el riesgo: Estándar (sin factores de riesgo), riesgo intermedio (edad > 35 años o recuento de leucocitos elevado) y alto riesgo (edad > 35 años y leucocitos elevados). Además se encontró que estos eran factores independientes para definir la supervivencia libre de enfermedad y global(2,12). 
+			p Aunque estas características clínicas juegan un rol importante en la definición del pronóstico y guía la terapia, la clasificación clínica dejaba un rango amplio de pacientes por fuera de su categoría: un 40 a 50% de pacientes de riesgo estándar presentaban recaídas tempranas de la enfermedad con una supervivencia global a 5 años del 50% aproximadamente; mientras que en el grupo de pacientes de alto riesgo, entre un 20 - 25% de los pacientes no experimentaban recaídas, por lo que fue necesario establecer formas de clasificación más precisas(13). 
+			p Por otra parte, las alteraciones citogenéticas demostraron tener un mayor impacto en pronóstico y tratamiento, sobre todo la presencia de cromosoma filadelfia, t (9;22) (q34,1;q11,2). La prevalencia de esta alteración citogenética aberrante varía de acuerdo con la edad, incrementándose a medida que la población envejece, documentándose en LLA en un 15-50% de los casos. Si bien, tener cromosoma filadelfia t(9;22) era considerada una mutación de alto riesgo, con sobrevida global a un año del 10%, el desarrollo de inhibidores de tirosina quinasa (ITQ) ha mejorado considerablemente el pronóstico en este grupo de pacientes, por lo que su identificación al momento del diagnóstico tiene un rol vital en definir la adición de ITQ como parte de la estrategia de tratamiento (14).
+			p Por lo demás, el cariotipo, ha demostrado predecir pronóstico cuando documenta otras alteraciones citogenéticas recurrentes en LLA filadelfia negativo, que están contempladas en la clasificación de la OMS han demostrado establecer otros subgrupos con resultados adversos, considerándose estas mutaciones como factores de riesgo citogenético de alto riesgo. Estás comprenden la t(4;11), KMT2A, t(8;14), cario tipo complejo (> 5 anormalidades cromosómicas), hipodiploidia (30-39 cromosomas) / cercanía a la triploidia (60-78 cromosomas)(2,15,16).
+			p Por otra parte, pacientes con hiperdiploidia (> 50 cromosomas, pero &lt;60), t(12;21) TEL-AML1 , t(1;19) E2A-PXB1 y del(9p) tienen un pronóstico mucho mejor. Varios grupos han demostrado que tener un perfil citogenético establecido desde el diagnóstico tienen un valor mucho más relevante que el recuento de leucocitos al diagnóstico(15–17). 
+			p En lo últimos años, varios grupos han demostrado la presencia de un perfil genético similar a las LLA filadelfia positivas, por lo que han sido llamadas LLA filadelfia – Like (Ph-Like), y están asociadas a una pobre respuesta a los agentes de quimioterapia, con la documentación de enfermedad mínima residual (EMR) positiva elevada y una pobre supervivencia(18). Si bien estos pacientes pueden tener un cariotipo normal en el estudio de citogenética convencional, el comportamiento clínico de la enfermedad en los pacientes Ph-Like es sumamente agresivo. La incidencia de Ph-Like parece incrementarse con la edad en las dos primeras décadas(19). Se calcula una incidencia aproximada de Ph-Like entre los pacientes con LLA del 12% entre las edades de 1 a 15 años, 21% entre las edades de 16 a 20 años, y hasta el 27% de las LLA en pacientes de 21 a 39 años, con una frecuencia aparentemente mayor entre los pacientes hispanos, lo que explicaría la alta refractariedad al tratamiento en los pacientes latinoamericanos (20). 
+			p Las alteraciones en la activación de quinasas se han identificado en un 91% de pacientes con LLA Ph-Like, con compromiso de ABL1, ABL2, CRLF2, CSF1R, EPOR, JAK2, NTRK3, PDGFRB, PTK2B, TSLP o TYK2, Mutación de secuencias de FLT3, IL7R o SH2B3. Las mutaciones de ABL1, ABL2, CSF1R, JAK2 y PDGFRB parecen producir proliferación independiente de citoquinas y activación por vía de fosforilación STAT5. Sin embargo, a la fecha no existe una alternativa terapéutica clara que muestre beneficio en este tipo de pacientes. Pacientes con LLA Ph-Like con mutaciones de ABL1, ABL2, CSF1R y PDGFRB han demostrado sensibilidad in vitro a Dasatinib; mutaciones de EPOR y JAK2 son sensibles a inhibidos de JAK como Ruxolitinib y mutaciones de ETV6-NTRK3 son sensible a Crizotinib(21).
+			p Por otra parte, también se ha demostrado que la respuesta inicial a la terapia de inducción establece un factor pronóstico importante en la LLA. A lo largo de los años, se ha determinado la respuesta con la morfología y la identificación de blastos tumorales mediante microscopia de luz, considerándose repuesta morfológica la presencia de &lt; 5% de blastos en la médula ósea. En los últimos años se ha vuelto rutinaria la identificación de la EMR mediante técnicas moleculares o citometría de flujo y/o reacción en cadena de polimerasa (PCR). La detección de enfermedad mediante técnicas que permitan una mayor profundidad en la identificación de enfermedad tumoral, ha permitido la introducción del concepto de EMR, la cual se define como la presencia de enfermedad molecularmente medible, con una técnica que permita identificación de material tumoral con una sensibilidad de 1 x10-4. 
+			p La presencia de EMR fue el factor de riesgo de mayor importancia para determinar una recaída, independiente del riesgo clínico, con un Hazard ratio de 5,22(13). Un meta-análisis publicado recientemente demostró el efecto pronóstico importante de la detección de la EMR. Un total de 23 artículos fueron incluidos para el análisis, de trabajos publicados entre 2012 y 2016, que incluían los datos de 5979 pacientes con datos disponibles sobre el estado de la EMR. El análisis primario revelo mejoría en la sobrevida libre de recaída a través de todos los estudios para pacientes que alcanzaron EMR negativa (Hazard ratio, 2,34; IC 95% 1,91-2,86). También se observó mejoría en la sobrevida global para pacientes que alcanzaron EMR negativa (Hazard ratio 2,19; IC 95% 1,63 – 2,94). No se observó diferencia en el impacto del estado de EMR en subgrupos basado en el estadío de la enfermedad, sensibilidad de la técnica utilizada para la detección de la EMR, umbral de detección de EMR, presencia o no de cromosoma Filadelfia, fenotipo histológico, grupo de riesgo, locación donde fue realizado el análisis de la EMR (laboratorio local o central), momento de análisis de EMR después de la inducción, método utilizado para la detección de EMR. A pesar de la heterogeneidad de los diseños de los estudios analizados, estos datos proveen un argumento de peso para establecer el estado de la EMR como una herramienta sumamente importante para determinar pronóstico y guiar la toma de decisiones terapéuticas en pacientes con LLA-B (22).
+			p Teniendo claro estos factores de riesgo y pronósticos, que son útiles en la toma de decisiones de tratamiento en LLA, es necesario aclarar el enfoque terapéutico de esta enfermedad en adultos y entender porque es diferente al de los niños. El tratamiento de la LLA en población pediátrica tiene tasas de cura mayores al 90%, con una diferencia significativamente menor en recaídas comparada a la población adulta. Si bien las tasas de respuesta a la inducción con quimioterapia en población adulta pueden alcanzar el 90%, es pertinente aclarar el concepto de “cura” en el cual no existe evidencia de enfermedad activa, ni recaídas, con periodos prolongados libres de enfermedad. Remisión en este caso hace referencia a alcanzar un grado de respuesta con tratamiento, en el que se identifican menos de 5% de población tumoral (bastos) en médula ósea(19). 
+			p Algunos de los elementos que se han identificado que justifican una peor respuesta en los adultos pueden incluir una mayor incidencia de genética de alto riesgo, tratamientos con una menor tasa de respuesta, incumplimiento con el tratamiento, intolerancia a tratamiento, poca estandarización de regímenes entre adultos, inclusión de una poca proporción de adultos diagnosticados con LLA en ensayos clínicos a diferencia de los pacientes pediátricos, en quienes un mayor ingreso a ensayos clínicos ha permitido obtener datos valiosos que han mejorado progresivamente el enfoque y tratamiento de pacientes con LLA en este grupo etario(16,19). 
+			p Además, se ha documentado de forma clara, que el mejor pronóstico de la LLA en niños va de la mano con una mayor identificación en factores de buen pronóstico dentro de la población pediátrica como la Hiperdiploidia, t(12;21) TEL-AML1; a diferencia de los adultos que presentan de forma más frecuente mutaciones de alto riesgo, como re-arreglos del gen MLL: t(4;11), t(11;19), t(9;11), t(9;11) (16) .  Figura 1.
+			
+			
+			//- imagen o video				
+			div.banner-video.wow.fadeInUp
+				div.imagen
+					div#video
+						figure.galeria
+							a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/leucemia-amgen/images/mod3/001.jpg' data-lightbox='example-1')
+								img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/leucemia-amgen/images/mod3/001.jpg' alt='image-1')
+				div.texto_imagen
+					div.img-footer
+						span Figura 1. Porcentajes de frecuencia de alteraciones citogenéticas recurrentes de riesgo adverso y favorable entre niños y adultos con LLA-B(16).
+						
+						
+			p Sin embargo, la mejoría progresiva del pronóstico de los pacientes adultos con LLA se ha observado entre otros, con la adaptación de regímenes de quimioterapia inspirados en protocolos pediátricos, mejor selección e identificación de los casos de alto riesgo citogenético lo que ha permitido una remisión temprana de estos pacientes para trasplante alogénico de progenitores hemapoyéticos como estrategia de consolidación, aumento en la disponibilidad de donantes disponibles, identificación y análisis de EMR en la toma de decisiones terapéuticas en este grupo de pacientes(16,19).
+					
+					
+			+progreso-modulo('progreso20')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-3')
+			
+		//- progreso y contador
+		+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=308544&chapterid=9149', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=308544&chapterid=9151', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

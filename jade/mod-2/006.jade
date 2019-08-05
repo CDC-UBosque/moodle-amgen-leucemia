@@ -1,0 +1,56 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 2', 'Fisiopatología de la leucemia linfoblástica aguda')
+			
+			//- banner modulo 1
+			+banner-video('video-mod-2')
+		
+			h3 Bibliografía
+			
+			h5 Anexa APA
+			
+			h3 Lecturas recomendadas
+			
+			ol
+				li Manual Básico Razonado, 4 edición, autor Jesús San Miguel, 2015, editorial Elservier
+				li Libro de Hematología Clínica, 5 edición, autor J Sans- Sabrafen, 2006
+				li Guía de práctica clínica Versión para profesionales de la salud 2017 Guía No. 34 para la detección, tratamiento y seguimiento de leucemias linfoblástica en la población mayor de 18 años.
+				
+			h3 Artículos complemento 
+			
+			ol
+				li How I treat acute lymphoblastic leukemia in older adolescents and young adults, Blood 2015 125:3702-3710
+				li Jam M, Ebert BL, Jaiswal. Clonal hematopoiesis, Semin Hematol 2017, Jan 54(1) 43-50
+				li Kansagra A1, Dahiya S2, Litzow M1. Continuing challenges and current issues in acute lymphoblastic leukemia. Leuk Lymphoma. 2018 Mar;59(3):526-541
+								
+					
+			+progreso-modulo('progreso100')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-2')
+			
+		//- progreso y contador
+		+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303054&chapterid=9053', 'back', 'Anterior', '#', 'disabled', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

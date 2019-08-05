@@ -1,0 +1,103 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 1', 'Generalidades de la leucemia linfoblástica aguda')
+			
+			//- banner modulo 1
+			+banner-video('video-mod-1')
+			
+			h2 Generalidades
+			
+			h3 1. ¿Qué es la Hematopoyesis?
+			
+			p Es la formación de los elementos que componen la sangre, el órgano hematopoyético en los adultos se llama médula ósea, que se encuentra en la epífisis de los huesos largos, esternón, iliacos, vértebras, consta de dos partes, la “roja” o hematopoyética y la “amarilla” o grasa, en algunas situaciones clínicas donde existe una gran necesidad hematopoyética, el hígado y el Bazo pueden participar en este proceso, esto es conocido como la “hematopoyesis extramedular”. (Laurenti E, 2012)
+			p La hematopoyesis es regulada por mecanismos de gran complejidad, en los que las células hematopoyéticas interaccionan entre sí, con su microambiente y estroma, factores de crecimiento y con la matriz extracelular. 
+			p El microambiente hematopoyético y el estroma medular tienen como función principal la producción de matriz extracelular, citoquinas, y factores de crecimiento que ejercen una función regulatoria sobre las células hematopoyéticas, están conformados por fibroblastos, adipocitos, macrófagos, células endoteliales y reticulares, todo este proceso logra la salida de las células hemáticas de la médula hacia la sangre. 
+			p Este complejo proceso debe mantener un equilibrio, por cada célula precursora hematopoyética que se produce tras la mitosis el sistema trata de eliminar otra mediante la “muerte celular programada” o apoptosis, en donde participan enzimas, proteínas y células como macrófagos. (Rieger MA, 2012)
+
+			h3 2. ¿Qué es la célula madre?
+			p Es la célula con capacidad de autorrenovarse, proliferar y de diferenciarse a diversos tipos de células especializadas. Existen células madres totipotenciales, pluripotenciales y multi y unipotenciales. (Morrison SJ, 2014)
+
+			h3 3. ¿Qué es la sangre?
+			p Es un líquido viscoso, de color rojo, compuesto de células y una solución coloidal conocida como plasma.  Regula el transporte de oxígeno a los tejidos y elimina el dióxido de carbono, lleva nutrientes, hormonas, participa en procesos como la coagulación, inmunidad, y homeostasis.
+			p Se compone de leucocitos (glóbulos blancos), derivados celulares como eritrocitos (glóbulos rojos) y plaquetas. 
+
+			h3 4. ¿Qué es la Leucemia?
+			p Se habla de Leucemia cuando hay una proliferación neoplásica de células hematopoyéticas inmaduras que se van acumulando de forma progresiva en el interior de la médula ósea, estas células replican pero no son capaces de madurar, lo que ocasiona una insuficiencia medular con las consecuencias clínicas que de ello se derivan. Son menos del 5% de todos los tumores malignos y comprenden diferentes tipos y subtipos clínicos, moleculares y citogenéticos.
+			p Estas células inmaduras son los mismos blastos, que deben superan el 20% de la celularidad medular o de la sangre periférica. Existen Leucemias agudas y crónicas. 
+			p En este capítulo nos vamos a enfocar en las Leucemias agudas, específicamente en las Linfoblásticas Agudas. (CH, 1998)
+			
+			h3 5. ¿Qué tipos de Leucemias Agudas existen?
+			
+			//- Acordion
+			div.accordion#accordion2
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse1' aria-expanded='false')
+							span Leucemia Aguda primaria
+					div#collapse1.accordion-body.collapse
+						div.accordion-inner
+							p El paciente no tiene antecedentes personales ni familiares de enfermedad hematológica.
+							
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse2' aria-expanded='false')
+							span Leucemia Aguda secundaria
+					div#collapse2.accordion-body.collapse
+						div.accordion-inner
+							p Pueden ser el resultado de la exposición a determinados químicos como el benceno, o a tratamientos previos como radioterapia, quimioterapia, irradiaciones nucleares, como resultado de la progresión de otro tipo de enfermedades hematológicas como los síndromes mielodisplásicos, síndromes mieloproliferativos, el síndrome de Down. 
+							
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse3' aria-expanded='false')
+							span Leucemia Mieloide Aguda
+					div#collapse3.accordion-body.collapse
+						div.accordion-inner
+							p La clona maligna es de origen mieloide.
+							
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse4' aria-expanded='false')
+							span Leucemia Linfoide Aguda
+					div#collapse4.accordion-body.collapse
+						div.accordion-inner
+							p  La clona maligna es de origen Linfoide.
+							
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse5' aria-expanded='false')
+							span Leucemia de línea Ambigua (fenotipo mixto e indiferenciadas)
+					div#collapse5.accordion-body.collapse
+						div.accordion-inner
+							p Tienen células de las 2 lìneas mieloides y linfoides. (Weinberg OK, 2014)
+					
+					
+			+progreso-modulo('progreso20')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-1')
+			
+		//- progreso y contador
+		+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303978&chapterid=9065', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303978&chapterid=9067', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

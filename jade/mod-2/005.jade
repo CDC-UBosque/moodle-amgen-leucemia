@@ -1,0 +1,102 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 2', 'Fisiopatología de la leucemia linfoblástica aguda')
+			
+			//- banner modulo 1
+			+banner-video('video-mod-2')
+		
+			h3 Citogenética
+			
+			p Las traslocaciones son las anormalidades cromosómicas más frecuentes en las LLA, en el 75% de los pacientes pediátricos se pueden detectar anomalías genéticas primarias, y en alrededor del 25 % de los adultos con LLA se detecta positividad para el cromosoma Filadelfia. en la tabla 3 resumimos las más frecuentes, la presencia del cromosoma Filadelfia puede aumentar con la edad, en pacientes mayores de 50 años se presenta hasta en el 40% de los casos. (Cetin Z, 2012) Como consecuencia de la alta frecuencia es necesario incluir técnicas moleculares y de Hibridación in situ (FISH) de forma rutinaria al momento del diagnóstico cuando la sospecha clínica es alta y cuando el cariotipo no es diagnóstico.
+			
+			//- Table
+			table.table.table-striped
+				caption Tabla 3. Alteraciones cromosómicas más frecuentes en las leucemias linfoblásticas agudas.
+				thead
+					tr
+						th Tipo de LLA
+						th Alteración cromosómica, traslocación.
+						th Alteración molecular 
+						th Comentarios
+				tbody
+					tr
+						td(rowspan="2") LLA pre-B
+						td Hiperdiploidía (51 a 65 cromosomas)
+						td No aplica
+						td Buen pronóstico
+					tr
+						td t (12;21)
+						td TEL/AML
+						td Más frecuente en niños, buen pronóstico
+					tr
+						td LLA común
+						td t (9;22)
+						td BCR/ABL
+						td Ph (+), tratamiento con ITK, mal pronóstico
+					tr
+						td(rowspan="2") LLA – B
+						td t (8;14)
+						td myc/IgH
+						td Característica de L3
+					tr
+						td t (4;11) 11q23
+						td MLL
+						td Frecuente en LLA pre-B, en lactantes, mal pronóstico
+					tr
+						td LLA – T 
+						td t (1;14) o deleción del gen TAL (cromosoma 1)
+						td TAL/TCR
+						td Lo más frecuente es la deleción
+						
+			p La positividad del cromosoma Filadelfia es un hallazgo de mal pronóstico en la LLA, incluso en los primeros resultados de ensayos clínicos que incluían pacientes con esta mutación, a los 5 años no se reportaron sobrevivientes, (Linker CA, 1991), este panorama ha ido cambiando desde la inclusión en el tratamiento de los inhibidores de Tirosina Kinasa como el Imatinib, dasatinib o nilotinib que van dirigidos a actuar en la proteína de fusión BCR-ABL, demostrando unas tasas significativamente más altas de remisiones completas y una mejoría en términos de supervivencia global.  
+			
+			//- imagen o video				
+			div.banner-video.wow.fadeInUp
+				div.imagen
+					div#video
+						figure.galeria
+							a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/leucemia-amgen/images/mod2/004.jpg' data-lightbox='example-1')
+								img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/leucemia-amgen/images/mod2/004.jpg' alt='image-1')
+				div.texto_imagen
+					div.img-footer
+						span La aparición de los anticuerpos monoclonales y las mejoras que se han realizado en las técnicas de citometría de flujo y de reacción en cadena de la polimerasa han permitido clasificar las LLA en distintos tipos, según el estadio madurativo de sus linfoblastos (Fig. 1).
+						
+						
+			h3 Manifestaciones Clínicas
+			
+			p Los síntomas clínicos de los pacientes con LLA son en su mayoría consecuencia de la infiltración en la médula ósea y fuera de la misma, lo más frecuente es encontrar anemia de tipo arregenerativo, normocítico normocrómico que se manifiesta por medio de palidez cutánea, astenia, adinamia, asociado a trombocitopenia con los consecuentes sangrados, y leucopenia o leucocitosis. 
+			p El compromiso extramedular como su nombre lo indica se refiere a la infiltración que pueden llegar a hacer las células leucémicas fuera de la médula, por eso en algunos tipos de LLA es frecuente encontrar adenopatías, aumento del tamaño del bazo y/o el hígado, masas tumorales en la región mediastínica generando en muchos casos un síndrome de vena cava superior y falla respiratoria. 
+			p En los casos en los que hay más de 50.000 leucocitos/mm3 en sangre periférica es más común encontrar compromiso en el sistema nerviosos central, testículos y glándula mamaria. 
+			p El síndrome de lisis tumoral aunque no es exclusivo de las leucemia agudas, se puede presentar asociado al momento del diagnóstico, sobre todo en la LLA de tipo 3, se caracteriza por el aumento de la LDH (deshidrogenasa láctica), alteración de la función renal, aumento de los niveles de potasio y fósforo en la sangre que pueden desencadenar arritmias cardiacas, convulsiones y la muerte, por eso se considera una urgencia oncológica. Un estudio en el que participaron 53 niños con LLA de tipo B reportaron los siguientes síntomas clínicos: lesiones óseas osteolíticas (26%), compromiso en la piel (23%), masa en el mediastino o en la pleura pulmonar (11%), adenomegalias (13%), compromiso en el testículo (6%), en riñón (2%), sistema nervioso central (6%), médula ósea (43%) , esto nos da una idea de lo variable que puede ser la clínica en este tipo de patologías (Ducassou S, 2011). 
+								
+					
+			+progreso-modulo('progreso70')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-2')
+			
+		//- progreso y contador
+		+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303054&chapterid=9052', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303054&chapterid=9054', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

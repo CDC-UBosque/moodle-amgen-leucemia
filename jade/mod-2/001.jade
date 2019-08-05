@@ -1,0 +1,66 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 2', 'Fisiopatología de la leucemia linfoblástica aguda')
+			
+			//- banner modulo 1
+			+banner-video('video-mod-2')
+			
+			p 
+				b TUTOR: 
+				| Dra. Silvia Rojas, Médico cirujano de la Pontifica Universidad Javeriana, especialista en Hematología y Hemoterapia por el Complejo Hospitalario de Salamanca, Doctora en Biociencias por la Universidad de Salamanca (España), médico adjunto del área clínica en los servicios de Hematología del Hospital Universitario San Ignacio y Mayor de Méderi, Bogotá, Colombia.
+				
+			h3 Objetivos del Aprendizaje
+			
+			//- Tabs
+			div.bs-docs
+				ul#myTab.nav.nav-tabs
+					li.active
+						a(href='#1' data-toggle='tab') 1
+					li
+						a(href='#2' data-toggle='tab') 2
+					li
+						a(href='#3' data-toggle='tab') 3
+				div#myTabContent.tab-content
+					div.tab-pane.fade.active.in#1
+						p Conocer conceptos básicos de la maduración normal de los linfocitos B y T.
+					div.tab-pane.fade#2
+						p Comprender los diferentes elementos pronósticos que pueden impactar en la supervivencia de los pacientes con LLA. 
+					div.tab-pane.fade#3
+						p Conocer posibles factores predisponentes para el desarrollo de la leucemia linfoblástica aguda.
+			
+			
+			h3 Introducción
+			
+			p Las leucemias agudas, son un grupo heterogéneo de enfermedades que vienen derivadas de la proliferación desordenada de una sola célula stem, o lo que se conoce como enfermedad clonal. El disbalance en los mecanismos de control celular casi siempre son derivados de la participación de múltiples factores, entre ellos están los cambios en los genes reguladores lo que ocasionan un exceso en la producción de células inmaduras que son inválidas funcionalmente. En el caso de las leucemias agudas linfoblásticas estos eventos ocurren durante la maduración de las células linfoides. A pesar de que hoy en día se tiene un mayor conocimiento sobre el origen de esta patología, de los múltiples factores que participan, del papel clave que juega el micro medioambiente hematopoyético, así como los factores genéticos, hereditarios y ambientales, aún quedan muchos interrogantes por responder. El conocer y entender la fisiopatología de las leucemias agudas nos va a permitir entender mejor el proceso diagnóstico y el tratamiento dirigido de esta enfermedad según el estadio madurativo y riesgo. (Ching-Hon Pui, 2014)
+					
+					
+			+progreso-modulo('progreso10')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-2')
+			
+		//- progreso y contador
+		+paginador('#', 'disabled', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303054&chapterid=9050', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

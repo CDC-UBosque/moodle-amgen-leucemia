@@ -1,0 +1,38 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 0', 'Lineamientos')
+			
+			h3 Carta bienvenida Curso Virtual de Leucemia Linfoblástica Aguda
+			
+			div.banner-videos
+				div.video-cc.wow.animated.fadeInLeft#video
+					div.embed-container
+						iframe(src="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/leucemia-amgen/pdf/mod0/Carta-de-Bienvenida-Curso-virtual-de-LLA-13Jun2019.pdf")
+						
+				
+			
+			
+		//- progreso y contador
+		+paginador('#', 'disabled', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303460&chapterid=9063', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

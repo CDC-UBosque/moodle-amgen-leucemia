@@ -1,0 +1,93 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 2', 'Fisiopatología de la leucemia linfoblástica aguda')
+			
+			//- banner modulo 1
+			+banner-video('video-mod-2')
+		
+			h3 Infecciones
+			
+			p No hay datos contundentes de que haya una causa viral en las leucemias agudas, pero si en algunos síndromes linfoproliferativos. La infección por el virus linfotrópico humano de células T tipo 1 (HTLV-1) se ha relacionado con la Leucemia-Linfoma T del adulto, y el virus de Epstein Barr con el Linfoma de Burkitt y Linfoma postrasplante (Poiesz BJ, 1980).
+			
+			h3 Alteraciones genéticas
+			
+			p En más del 70% de los casos pediátricos se han detectado algunas anomalías genéticas primarias, en promedio 6 alteraciones  en las copias del DNA (Hunger SP, 2015). Dentro de los defectos genéticos más relacionados están los síndromes de fragilidad cromosómica, situaciones en las que hay una falla en los mecanismos de reparación del daño cromosómico con la subsecuente alteración del DNA, que deriva en tumores, dentro de las enfermedades más conocidas están:
+			
+			//- Acordion
+			div.accordion#accordion2
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse1' aria-expanded='false')
+							span Anemia de Fanconi
+					div#collapse1.accordion-body.collapse
+						div.accordion-inner
+							p Enfermedad hereditaria, de patrón autosómico recesivo, asociada a múltiples mutaciones genéticas lo que hace que sea un trastorno fenotípicamente heterogéneo, donde lo más frecuente son las malformaciones anatómicas, predisposición a cáncer e insuficiencia de la médula ósea (Dufour, 2017).
+							
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse2' aria-expanded='false')
+							span Síndrome de Bloom
+					div#collapse2.accordion-body.collapse
+						div.accordion-inner
+							p Trastorno autosómico recesivo, raro, en donde los pacientes presentan fotosensibilidad, telangiectasias, estatura baja, alteraciones inmunitarias y alto riesgo de tumores, los cuales son la principal causa de muerte en estos pacientes (Arora H, 2014).	
+							
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse3' aria-expanded='false')
+							span La ataxia telangiectasia
+					div#collapse3.accordion-body.collapse
+						div.accordion-inner
+							p Trastorno autosómico recesivo en donde hay un daño en el gen ATM (localizado en el brazo largo del cromosoma 11), este daño confiere inestabilidad cromosómica, inmunodeficiencia celular y humoral, y mayor riesgo de desarrollar cáncer (al N.-M. e., 2012).	
+							
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse4' aria-expanded='false')
+							span Anemia de Blackfand -Diamond
+					div#collapse4.accordion-body.collapse
+						div.accordion-inner
+							p Es una ribosomopatía con una haploinsuficiencia de las proteínas ribosomales, con un daño en los receptores de eritropoyetina lo que conduce a un fallo en los mecanismos de producción de la línea eritroide, tiene una herencia en la mayoría de los casos autosómica dominante, el 90% de los pacientes tienen una anemia severa (Clinton, 2014).	
+							
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse5' aria-expanded='false')
+							span El síndrome de Down (SD)
+					div#collapse5.accordion-body.collapse
+						div.accordion-inner
+							p Es un trastorno genético en donde hay una copia extra del cromosoma 21,  lo que confiere un riesgo 15 veces mayor de desarrollar leucemias agudas, (TD, 2014). La historia natural de la leucemia aguda en estos pacientes, sugiere que la trisomía contribuye funcional y directamente a la transformación maligna de las células hematopoyéticas.		
+							
+							
+			p Los factores genéticos cada vez adquieren un papel más relevante en la fisiopatología de las leucemias agudas, hay una fuerte relación entre las LLA y traslocaciones cromosómicas, la clasificación de la OMS (2016 & 127(20):2391-2405., 2016) se actualizó para poder incluir nuevos grupos diagnósticos, con alteraciones específicas, que en muchos casos solo se pueden confirmar con técnica moleculares y citogenéticas, esto es un reflejo de la importancia que tienen los mecanismos oncogénicos que están involucrados en el desarrollo de leucemias agudas que nos permitirán clasificar cada caso para así poder individualizar las terapias, con el objetivo principal de mejorar la supervivencia global de los pacientes. 
+			p Los avances en las técnicas y estudio de la biología molecular nos ha permitido identificar en un gran número de células las alteraciones citogenéticas que pueden afectar el número y/o estructura de los cromosomas. La hiperdiploidía en los linfoblastos, es decir el aumento en el número de cromosomas en más de 51 es un factor de buen pronóstico, esto se debe a que estas células tienen mayor predisposición a la apoptosis o muerte celular programada. 
+			p Existen múltiples formas de clasificar las leucemias linfoblásticas, desde el punto de vista morfológico, inmunofenotípico y citogenético, todo esto con el objetivo de diferenciarlas según su estadio de maduración lo cual tiene implicaciones pronósticas y de tratamiento. 
+								
+					
+			+progreso-modulo('progreso40')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-2')
+			
+		//- progreso y contador
+		+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303054&chapterid=9050', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303054&chapterid=9052', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

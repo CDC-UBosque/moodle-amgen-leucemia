@@ -1,0 +1,67 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 1', 'Generalidades de la leucemia linfoblástica aguda')
+			
+			//- banner modulo 1
+			+banner-video('video-mod-1')
+			
+			p 
+				b TUTOR: 
+				| Dra. Silvia Rojas, Médico cirujano de la Pontifica Universidad Javeriana, especialista en Hematología y Hemoterapia por el Complejo Hospitalario de Salamanca, Doctora en Biociencias por la Universidad de Salamanca (España), médico adjunto del área clínica en los servicios de Hematología del Hospital Universitario San Ignacio y Mayor de Méderi, Bogotá, Colombia.
+				
+			h3 Objetivos del Aprendizaje
+			
+			//- Tabs
+			div.bs-docs
+				ul#myTab.nav.nav-tabs
+					li.active
+						a(href='#1' data-toggle='tab') 1
+					li
+						a(href='#2' data-toggle='tab') 2
+					li
+						a(href='#3' data-toggle='tab') 3
+				div#myTabContent.tab-content
+					div.tab-pane.fade.active.in#1
+						p Conocer la definición de Leucemia aguda y sus consecuencias clínicas.
+					div.tab-pane.fade#2
+						p Entender el proceso diagnóstico y el impacto pronóstico de cada uno de los hallazgos de laboratorio.
+					div.tab-pane.fade#3
+						p Entender las fases del tratamiento de la Leucemia Aguda de linaje linfoide.
+			
+			
+			h3 Introducción
+			
+			p Las leucemias agudas son la proliferación descontrolada de células inmaduras llamadas blastos, que infiltran la médula ósea impidiendo la formación de los elementos sanguíneos normales. Esto trae como consecuencias, anemia, hemorragias e infecciones, se dividen en 2 grupos, las Leucemias mieloblásticas y linfoblásticas, se requieren diferentes técnicas diagnósticas para su estudio y clasificación pronóstica de lo que dependerá el tipo de tratamiento. 
+			p El conocimiento de esta temática es de interés para todos los profesionales de la salud inmersos en el tratamiento, intervención y cuidado de los pacientes ya que la complejidad del diagnóstico implica un manejo multidisciplinario en donde debe haber una participación activa y articulada entre el equipo médico, de enfermería y farmacia que conllevan un beneficio clínico para nuestros pacientes con Leucemia Aguda.
+					
+					
+			+progreso-modulo('progreso10')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-1')
+			
+		//- progreso y contador
+		+paginador('#', 'disabled', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303978&chapterid=9066', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -1,0 +1,58 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 3', 'Tratamiento de leucemia linfoblástica aguda')
+			
+			//- banner modulo 1
+			+banner-video('video-mod-3')
+
+				
+			h3 Transplante alogénico de progenitores hematopoyeticos
+			
+			p Las indicaciones de trasplante alogénico de médula ósea han cambiado en el tiempo, actualmente se consideran las siguientes como indicaciones absolutas para trasplante:
+			
+			ol
+				li Mayores de 40 años
+				li Leucocitos mayores de 30 x 109 en LLA-B al diagnóstico o más de 100 x 109 en LLA-T
+				li Cromosoma filadelfia positivo
+				li t (4;11) (q21; q23)
+				li t (8;14) (q24,1; q32)
+				li Cariotipo complejo
+				li Baja hipodiploidia / cercanía a la triploidia
+				li LLA-T temprana 
+				li Ph-like: deleción IKZF1 en LLA-B 
+				li NOTCH1/FBXW7; N/K-RAS, PETN en LLA-T
+				li EMR positiva > 1 x 10-4 después de dos ciclos de quimioterapia
+				li Reaparición de EMR
+				li Falla en mantener la respuesta completa durante las primeras 4 semanas después de terapia(70).
+					
+					
+			+progreso-modulo('progreso90')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-3')
+			
+		//- progreso y contador
+		+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=308544&chapterid=9153', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=308544&chapterid=9155', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

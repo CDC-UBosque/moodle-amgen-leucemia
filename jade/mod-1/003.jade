@@ -1,0 +1,104 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 1', 'Generalidades de la leucemia linfoblástica aguda')
+			
+			//- banner modulo 1
+			+banner-video('video-mod-1')
+			
+			h3 6. ¿Qué es la Leucemia Linfoblástica Aguda, LLA?
+			p Es una proliferación neoplásica de células Linfoides inmaduras, se ha estimado que la incidencia anual es de 1 a 5 casos por 100.000 habitantes, siendo dos tercios de estos casos de fenotipo B. (Dores GM1, 2012).
+			p Es el cáncer más común en niños, tres cuartos de los casos ocurren en menores de 6 años, y hay un segundo pico de incidencia en adultos mayores de 60 años. Su causa aun sigue siendo desconocida, puede estar relacionada con radiaciones ionizantes, procesos infecciosos aun desconocidos, se ha descrito una variedad llamada “LLA familiar”, son casos raros que se han relacionado con mutaciones hereditarias. (Shas S, 2013)
+
+			h3 7. Clasificación de la Leucemia Linfoblástica Aguda
+			p La clasificación Franco-Americo-Británica (FAB) fue creada en 1976 (JM, 1976), se fundamenta en diferenciar Las leucemias de acuerdo con las características morfológicas, existen 3 subtipos morfológicos contemplados en la clasificación de la LLA:
+			
+			//- Acordion
+			div.accordion#accordion2
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse1' aria-expanded='false')
+							span L1
+					div#collapse1.accordion-body.collapse
+						div.accordion-inner
+							p Células pequeñas, de tamaño homogéneo, núcleo redondo y regular, sin nucleolo y citoplasma escaso.
+							
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse2' aria-expanded='false')
+							span L2
+					div#collapse2.accordion-body.collapse
+						div.accordion-inner
+							p Células grandes, de tamaño heterogéneo, núcleo irregular con escotaduras y citoplasma abundante.
+							
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse3' aria-expanded='false')
+							span L3
+					div#collapse3.accordion-body.collapse
+						div.accordion-inner
+							p Células grandes, de tamaño homogéneo, núcleo redondo u ovalado, con nucléolo prominente, citoplasma abundante con intensa basofilia y con vacuolas. (este subtipo es equivalente a la fase leucémica del Linfoma Burkitt). 
+							
+							
+			p La clasificación de la Organización Mundial de la Salud (OMS) (2016 & 127(20):2391-2405., 2016)tiene en cuenta la importancia en el pronóstico de determinadas alteraciones citogenéticas y moleculares. 
+			p En esta clasificación las leucemias agudas linfoblásticas (LLA) se incluyen dentro de las neoplasias de precursores B y T y se distinguen dos entidades: la leucemia/linfoma linfoblástico de precursores B y la leucemia/linfoma linfoblástica de precursores T que supone un 15 a 20% de todas las leucemias Linfoblásticas.  
+			
+			h5 Leucemia/linfoma linfoblástico B 
+			
+			ul
+				li Leucemia/linfoma linfoblástico B, no especificado de otra manera 
+				li Leucemia/linfoma linfoblástico B con alteraciones genéticas recurrentes
+				li Leucemia/linfoma linfoblástico B con t(9;22)(q34.1;q11.2);BCR-ABL1 
+				li Leucemia/linfoma linfoblástico B con t(v;11q23.3); reordenamiento KMT2A 
+				li Leucemia/linfoma linfoblástico B con t(12;21)(p13.2;q22.1); ETV6-RUNX1
+				li Leucemia/linfoma linfoblástico B con hiperdiploidía 
+				li Leucemia/linfoma linfoblástico B con hipodiploidía 
+				li Leucemia/linfoma linfoblástico B con t(5;14)(q31.1;q32.3); IL3-IGH 
+				li Leucemia/linfoma linfoblástico B con t(1;19)(q23;13.3); TCF3-PBX1 
+				li Entidad provisional: leucemia/linfoma linfoblástico B, BCR-ABL1-like 
+				li Entidad provisional: leucemia/linfoma linfoblástico B con iAMP21
+				
+			h5 Leucemia/linfoma linfoblástico T 
+			
+			ul
+				li Entidad provisional: leucemia linfoblástica de célula T precursora temprana
+				li Entidad provisional: leucemia/linfoma linfoblástico de células NK
+					
+			h3 8. Manifestaciones clínicas 
+
+			p El tiempo de desarrollo de la enfermedad es variable, algunos pacientes presentan síntomas que van avanzando lentamente durante semanas o meses, mientras que otros tienen presentaciones más agudas.
+			p En la mayoría de pacientes podemos encontrar lo que conocemos como el síndrome constitucional (astenia, debilidad o fatiga, adelgazamiento y anorexia), presencia de síntomas B que se definen como la pérdida de peso de mas del 10% en los últimos 6 meses, sudoración profusa de predominio nocturno y fiebre vespertina. 
+			p Como consecuencias de la infiltración medular se presenta anemia, trombocitopenia que puede favorecer cuadros de hemorragias, equimosis, hematomas, leucopenia o leucocitosis que se traduce en mayor riesgo de infecciones. 
+			p Muchos pacientes manifiestan dolor óseo que puede ser espontáneo o a la palpación, provocado por la misma infiltración medular, ganglios aumentados de tamaño en su mayoría cervicales, aumento del tamaño del bazo y hasta en un 50% de los casos aumento del tamaño del hígado; en un 15% de los casos se puede encontrar una masa en el mediastino que en el 80% de los casos de trata de un Linfoma Linfoblástico T.  
+			p Hasta un 10% de los pacientes pueden presentar afectación neuromeníngea manifestando cefaleas, anormalidades al fondo de ojo (papiledema) y parálisis de nervios craneales. Un 2 a 3% de los pacientes pueden tener compromiso del sistema nervioso central sin tener manifestaciones clínicas. Puede haber infiltración testicular, aunque este es hallazgo más frecuente en niños. (al, 2005)
+
+					
+			+progreso-modulo('progreso40')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-1')
+			
+		//- progreso y contador
+		+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303978&chapterid=9066', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303978&chapterid=9068', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

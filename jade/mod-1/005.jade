@@ -1,0 +1,140 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 1', 'Generalidades de la leucemia linfoblástica aguda')
+			
+			//- banner modulo 1
+			+banner-video('video-mod-1')
+			
+			h3 10. ¿Cómo se estratifica el riesgo? (Agriello, 2017)
+			h5 En riesgo citogenético-molecular 
+			
+			p 
+				b Riesgo alto:  
+				| (si cumple cualquiera de los siguientes) 
+
+			
+			ul
+				li Cariotipo hipodiploide o Rearreglos 11q23.3 (KMT2A - previamente MLL) t(9;22) filadelfia.
+				li Cariotipo complejo (5 o más alteraciones) 
+				li iAMP21 (amplificaciones de RUNX1) 
+				
+			p 
+				b Riesgo intermedio: 
+				| si no cumple ninguno de los anteriores.
+					
+			h5 En riesgo según características clínicas y de laboratorio
+			
+			p Riesgo intermedio: 
+			
+			ul
+				li Tener menos de 30 años. 
+				li Tener Inmunofenotipo B no proB y cortical T.
+				li Leucocitos inferiores a 30.000/mm3 en B y &lt; 100.000/mm3 en leucemia de células T.
+				li Ausencia de cualquier alteración citogenética-molecular de alto riesgo. 
+				li Buena respuesta a corticoides al día 8 (tener menos de 1.000 blastos/mm3  en sangre periférica).
+				li Tener menos de 5% de blastos en aspirado de médula ósea en el día 15 o 33 del tratamiento 
+				li Tener menos de 10% blastos confirmado en citometría de flujo al día 15.
+				
+			p Alto riesgo:
+			
+			ul
+				li Tener más de 30 años.
+				li Inmunofenotipo proB, inmunofenotipo T. 
+				li Leucocitos >30.000/mm3 en B y > a 100.000/mm3 en T o Presencia de alguna alteración citogenética-molecular de alto riesgo. 
+				li Mala respuesta a corticoides al día 8 (más de 1.000 blastos/mm3 en sangre periférica).
+				li Tener más de 20% de blastos en el día 15 confirmado en aspirado de médula ósea.
+				li Tener más de 10% blastos confirmado en citometría de flujo al día 15.
+				li Tener mas de 5% de blastos en aspirado de médula del día 33 del tratamiento.
+				
+			h3 11. Generalidades en el tratamiento 
+			
+			p Antes de iniciar el tratamiento de la leucemia linfoblástica, es indispensable conocer las características clínico biológicas iniciales para así establecer el riesgo y el pronóstico y poder elegir el tipo de tratamiento. Desde el momento del diagnóstico se debe iniciar el manejo general del paciente:
+			
+			ul
+				li Aislamiento protector idealmente en habitación individual.
+				li Colocación de catéter venoso central.
+				li Asegurar una buena hidratación intravenosa para garantizar una diuresis óptima.
+				li Iniciar alopurinol, en algunos casos alcalinización de la orina.
+				li Valorar las necesidades transfusionales de glóbulos rojos y/o plaquetas.
+				li Vigilancia de curva térmica y hacer manejo de infecciones, así como inicio de profilaxis, antimicrobianas. 
+				
+			h3 12. Quimioterapia (Sabrafen, 2006)
+			
+			p En general se habla de varias fases, inducción a la remisión, Consolidación/intensificación y mantenimiento, es un tratamiento largo, que dura aproximadamente 2 años. 
+			
+			//- Acordion
+			div.accordion#accordion2
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse1' aria-expanded='false')
+							span Inducción a la remisión
+					div#collapse1.accordion-body.collapse
+						div.accordion-inner
+							p El objetivo es alcanzar la remisión completa (RC), o sea una situación en la que el paciente esta en buen estado general, y en donde no se encuentran células blásticas, el hemograma casi normal. La tasa de RC obtenida en los diversos esquemas oscila en el 75 y 85%. La mortalidad en esta fase es del 5 al 10% lo cual varia con la edad (inferior al 5% en jóvenes y superior al 20% en mayores de 60 años). La causa mas frecuente de muerte son las infecciones sobre todo por hongos. Aproximadamente un 10% de los pacientes no responden a esta fase lo que confiere un pronóstico adverso y en donde se debe intentar llevar al paciente a una RC y a una consolidación urgente con un trasplante alogénico de médula ósea. Habitualmente se usan agentes quimioterápicos como la vincristina, esteroides, antraciclinas como la daunorrubicina y enzimas antineoplásicas como la asparraginasa. 
+							
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse2' aria-expanded='false')
+							span Consolidación/Intensificación
+					div#collapse2.accordion-body.collapse
+						div.accordion-inner
+							p Consiste en un tratamiento destinado a disminuir o eliminar la leucemia residual en los pacientes que alcanzan RC. Esto incluye dar quimioterapia a altas dosis, combinaciones de diferentes fármacos o volver a administrar el tratamiento de inducción, habitualmente se usan altas dosis de metotrexate, citarabina y ciclofosfamida, entre otros. 
+							
+							
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse3' aria-expanded='false')
+							span Tratamiento y profilaxis en el sistema nervioso central (SNC)
+					div#collapse3.accordion-body.collapse
+						div.accordion-inner
+							p La profilaxis de la leucemia en SNC debe hacer parte del tratamiento de todos los pacientes, si no se efectúa las tasas de recaída en SNC son alrededor del 30%. Se realiza profilaxis con quimioterapia intratecal, con altas dosis de quimioterapia intravenosa que garanticen penetrancia al sistema nervioso central (citarabina y metotrexate), o radioterapia holocraneal. La toxicidad en el sistema nervioso central en adultos es baja, se pueden presentar complicaciones como reacciones febriles, aracnoiditis, o leucoencefalopatía. 
+							
+							
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse4' aria-expanded='false')
+							span Mantenimiento
+					div#collapse4.accordion-body.collapse
+						div.accordion-inner
+							p El objetivo de esta fase es eliminar la leucemia residual que pueda existir tras superar la inducción y consolidación. Su duración es aproximadamente de 2 años, aunque eso suele individualizarse en función del tipo de LLA, de la enfermedad mínima residual. Habitualmente se usa mercaptopurina, metotrexate y Vincristina. 
+							
+							
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse5' aria-expanded='false')
+							span Trasplante Hematopoyético
+					div#collapse5.accordion-body.collapse
+						div.accordion-inner
+							p En los pacientes de alto riesgo el trasplante es la estrategia que hace el papel de intensificación cuyo fin es eliminar la leucemia residual. 
+
+					
+			+progreso-modulo('progreso80')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-1')
+			
+		//- progreso y contador
+		+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303978&chapterid=9068', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303978&chapterid=9070', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

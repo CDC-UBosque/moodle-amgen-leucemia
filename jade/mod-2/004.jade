@@ -1,0 +1,106 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 2', 'Fisiopatología de la leucemia linfoblástica aguda')
+			
+			//- banner modulo 1
+			+banner-video('video-mod-2')
+		
+			h3 Morfológica
+			
+			p A pesar de ser poco utilizada en la actualidad, la clasificación morfológica de la FAB (franco- americo británica) consideró 3 subtipos morfológicos para describir los blastos. Tabla 1:
+			
+			//- Table
+			table.table.table-striped
+				caption Tabla 1
+				tbody
+					tr
+						td L1
+						td Células pequeñas, cromatina homogénea, núcleo redondo, regular, sin nucleolo, y citoplasma escaso, basofilia ligera.
+							br/
+							img(src="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/leucemia-amgen/images/mod2/001.jpg")
+					tr
+						td L2
+						td Células grandes, de tamaño heterogéneo, núcleo irregular, nucleolos prominentes y citoplasma abundante con escasa o nula basofilia. 
+							br/
+							img(src="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/leucemia-amgen/images/mod2/002.jpg")
+					tr
+						td L3
+						td Células grandes, cromatina homogénea, núcleo redondo y nucleolo visible, basofilia intensa.
+							br/
+							img(src="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/leucemia-amgen/images/mod2/003.jpg")
+						
+			h3 Inmunofenotípico
+			
+			p La clasificación inmunológica es imprescindible para el estudio de las leucemias agudas linfoblásticas, el perfil inmunofenotípico define subgrupos de riesgo y pronósticos específicos. Según el grupo Europeo para la caracterización de las leucemias agudas (EGIL) (Bene MC, 1995) se diferencian en LLA de estirpe Linfoide B y T. Tabla 2. 
+			p Mediante la citometría de flujo es posible reconocer antígenos en la membrana celular o en su citoplasma, y algunos otros específicos para diferentes poblaciones celulares. Los anticuerpos que distinguen los conjuntos de diferenciación son mejor conocidos como moléculas de “diferenciación en la superficie celular o CD”.  Mediante este método se puede confirmar el diagnóstico en 99% de los casos.
+			p  El 80% de las leucemias linfoblásticas procede de las células B, la mayor parte de las LLA son pre-B que expresan CD19 y CD10, y 50% expresa CD20. 
+			
+			//- Table
+			table.table.table-striped
+				caption  Tabla 2. Clasificación inmunológica en las leucemias linfoblásticas agudas.
+				thead
+					tr
+						th Subtipo inmunológico de LLA Linfoide B
+						th Marcadores inmunológicos de superficie
+				tbody
+					tr
+						td LLA B1 o pro-B
+						td CD79a+, y/o CD22+, y/o CD19+
+					tr
+						td LLA B2 o común
+						td CD79a+, y/o CD22+, y/o CD19+, CD10+
+					tr
+						td LLA B3 o pre-B
+						td CCD79a+, y/o CD22+, y/o CD19+, cadenas µ intracitoplasmáticas
+					tr
+						td LLA B4 o maduro
+						td CD79a+, y/o CD22+, y/o CD19+, IgS+
+				thead
+					tr
+						th Subtipo inmunológico de LLA Linfoide T
+						th Marcadores inmunológicos de superficie
+				tbody
+					tr
+						td LLA -T<sub>1</sub> o pro-T
+						td CD7+, TdT+, CD3+, CD1-
+					tr
+						td LAL -T2 o pre-T
+						td CD2+, y/o CD5 y/o CD8, TdT+ CD4+ ó CD8+
+					tr
+						td LAL -T<sub>3</sub>  o cortical
+						td CD1a+, CD5+, CD3+, TdT+/-
+					tr
+						td LAL-T<sub>4</sub> madura
+						td CD3+, CD1a-, CD7+,CD5+
+								
+					
+			+progreso-modulo('progreso50')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-2')
+			
+		//- progreso y contador
+		+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303054&chapterid=9051', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303054&chapterid=9052', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

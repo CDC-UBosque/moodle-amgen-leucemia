@@ -1,0 +1,64 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 1', 'Generalidades de la leucemia linfoblástica aguda')
+			
+			//- banner modulo 1
+			+banner-video('video-mod-1')
+			
+			h3 9. Diagnóstico
+			p Al tener la sospecha clínica se deben solicitar los estudios necesarios para confirmar el diagnóstico:
+			
+			ul
+				li Cuadro hemático y extendido de sangre periférica: podemos encontrar leucocitosis, leucopenia, neutropenia, trombocitopenia, anemia, en el extendido se pueden identificar los blastos o células inmaduras.
+				li Biopsia y aspirado de médula ósea, obteniendo muestras para citometría de flujo, cariotipo o estudio genético y en algunos casos estudios moleculares e inmunofluorescencia in situ (FISH), en muchos casos si existen gran cantidad de blastos en sangre periférica también se pueden realizar dichos estudios en esa muestra.
+				li Solicitamos niveles de deshidrogenasa láctica que puede estar aumentada debido al recambio celular, niveles de ácido úrico, pruebas de función renal y hepática, glicemia, serologías virales de virus de hepatitis, tiempos de coagulación, y fibrinógeno.
+				li Punción Lumbar para hacer el estudio del líquido cefaloraquídeo, análisis citológico, citoquímico y citometría de flujo para descartar presencia de blastos. 
+				li En algunos casos, según los hallazgos al examen físico se requieren estudios de imagen con tomografías, ecografía testicular, examen de fondo de ojo, todo encaminado a descartar infiltración leucémica o presencia de masas, lo que llamamos “compromiso extramedular”. 
+				li Estudios de Histocompatibilidad (HLA) idealmente antes de que el paciente reciba trasfusión de glóbulos rojos.
+				li Recordemos que para confirmar el diagnóstico debe existir infiltración blástica en médula ósea o sangre periférica superior al 20% (2016 & 127(20):2391-2405., 2016)
+				
+				
+			h3 Pronóstico
+			p Los protocolos de tratamiento actuales para la LLA se basan en el riesgo, para reducir la toxicidad en los enfermos clasificados de bajo riesgo y al tiempo garantizar una terapia apropiada, y así mismo en los de alto riesgo ofrecer una terapia mas agresiva que reduzca el riesgo de recaídas (D, 1999). 
+			
+			ul
+				li Dentro de los principales factores pronósticos de la LLA esta la edad, el mejor pronóstico lo tienen los pacientes entre 1 y 9 años, lo que significa que el 60 a 80% de los niños están libres de enfermedad a los 5 años, mientras que el 20 a 30% de los adultos y los menores de 1 año logran esta respuesta. Esto quiere decir a mayor edad, peor pronóstico. (Hammond D, 1986)
+				li Los pacientes con hiperdiploidía (51-65 cromosomas) presentan buen pronóstico.
+				li Alcanzar una cifra de blastos menores al 5% en el día 14 del inicio del tratamiento, confiere un mejor pronóstico, alcanzar remisión completa (RC) al final de inducción define riesgo en algunos protocolos de quimioterapia, principalmente en los basados en esquemas pediátricos
+				li El tener conteo de leucocitos mayores a 30.000/mm3 para la línea B y > 100.000/mm3 para la línea T, confiere un peor pronóstico.
+				li El compromiso en sistema nervioso central confiere un peor pronóstico.
+				li Inmunofenotipo: en las LLA B, las proB son de peor pronóstico dado a que se asocian con la presencia de rearreglos cromosómicos, por ejemplo del gen MLL. 
+				li Ser de linaje T representa un peor pronóstico. 
+				li Algunas alteraciones citogenéticas y/o moleculares tienen impacto pronóstico y definen grupos de riesgo, por ejemplo la presencia de cromosoma Filadelfia, confiere un peor pronóstico.
+
+					
+			+progreso-modulo('progreso60')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-1')
+			
+		//- progreso y contador
+		+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303978&chapterid=9067', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303978&chapterid=9069', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -1,0 +1,77 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 3', 'Tratamiento de leucemia linfoblástica aguda')
+			
+			//- banner modulo 1
+			+banner-video('video-mod-3')
+			
+			p 
+				b TUTOR: 
+				| Dr. Bonell Patiño Escobar
+				br/ Médico especialista en Medicina interna 
+				br/ Sub-Especialista en Hematología 
+				br/ Hematólogo Instituto Nacional de Cancerología E.S.E – Hospital Universitario Clínica San Rafael
+				br/ Miembro del grupo de Leucemias Agudas Instituto Nacional de Cancerología E.S.E.
+
+				
+			h3 Objetivos del Aprendizaje
+			
+			//- Tabs
+			div.bs-docs
+				ul#myTab.nav.nav-tabs
+					li.active
+						a(href='#1' data-toggle='tab') 1
+					li
+						a(href='#2' data-toggle='tab') 2
+					li
+						a(href='#3' data-toggle='tab') 3
+				div#myTabContent.tab-content
+					div.tab-pane.fade.active.in#1
+						p Identificar los factores de riesgo adversos tanto clínicos como citogenéticos de la leucemia linfoblástica agudas y su implicación terapéutica.
+					div.tab-pane.fade#2
+						p Reconocer las indicaciones de trasplante alogénico de progenitores hematopoyéticos en pacientes con leucemia linfoblástica aguda.
+					div.tab-pane.fade#3
+						p Reconocer las nuevas estrategias de tratamiento en leucemia linfoblástica actualmente utilizadas alrededor del mundo.
+			
+			
+			h3 Introducción
+			
+			p La leucemia linfoblástica aguda (LLA) es una transformación y proliferación neoplásica de las células progenitoras linfoides B, T o NK en la médula ósea, sangre y tejidos extra-medulares. En adultos, la LLA de células B es la de mayor incidencia siendo la leucemia de células T solo el 25% de los casos presentados. Si bien la mayoría de casos de leucemia linfoblástica aguda se da en niños, esta afecta a los adultos con un comportamiento más agresivo. La incidencia de esta enfermedad está estimada en 1,6 por 100.000 habitantes en Estados Unidos, con 1400 muertes en 2016 con un estimado de 6590 casos nuevos(1–3). 
+
+			p En Colombia según los datos de la situación del cáncer 2016, la prevalencia de la Leucemia linfoblástica aguda estuvo ubicada en el vigésimo primer lugar de la población total de pacientes con diagnóstico de cáncer, además de ser la cuarta neoplasia hematológica en pacientes mayores de 18 años, afectando principalmente a los pacientes entre 18 y 29 años. Aunque esta enfermedad tiene una prevalencia mayor en niños y adultos jóvenes, la incidencia tiene un doble pico, el primero ya mencionado y el segundo alrededor de los 50 años, con un pronóstico muy malo para los pacientes mayores. Según la cuenta de alto costo, para 2015 la prevalencia de esta enfermedad en mayores de 18 años se situó en 1,8 casos por cada 100.000 habitantes y en 2016 en 2,2 casos por cada 100.000 habitantes. La morbimortalidad en los dos periodos de análisis presentó un aumento en la prevalencia, mientras la mortalidad permaneció estable, sin embargo la mortalidad superó la incidencia para ambos periodos analizados, lo que pone de manifiesto la alta agresividad de esta neoplasia(2,4). 
+
+			p El pronóstico de la leucemia linfoblástica aguda ha mejorado en las últimas décadas, particularmente para pacientes pediátricos y adultos jóvenes. Actualmente la terapia de alta intensidad basada en esquemas de quimioterapia con combinación de agentes citotóxicos alcanza tasas de respuesta mayores o iguales al 90%. A pesar de las altas tasas de respuesta a la inducción con quimioterapia, solo un 30 a 40% de pacientes adultos con leucemia linfoblástica aguda alcanzan remisiones a 5 años. Sin embargo la mayoría de pacientes presentan recaídas requiriendo protocolos de rescate con un pronóstico incierto con tasas de respuesta que varían entre un 18 a 45%, siendo este grupo de pacientes (recaídos/refractarios) quienes tienen un pronóstico más adverso, con supervivencia a 5 años de aproximadamente un 10% (2,5–7).
+
+			p Es por esto que la leucemia linfoblástica aguda continúa siendo un reto diagnóstico y terapéutico a pesar de los avances alcanzados en los últimos años. Teniendo en cuenta que el cuadro clínico inicial se deriva de un síndrome de fallo medular como consecuencia de la infiltración de la médula ósea por células tumorales que impiden una adecuada hematopoyesis y génesis de los componentes celulares normales de la sangre, la hemorragia, infección y anemia severa, requieren de una identificación e intervención urgente para evitar complicaciones y mortalidad temprana. La agresividad de la enfermedad nos obliga a realizar un adecuado diagnóstico y tratamiento de la mano de los avances diagnósticos y terapéuticos con los nuevos agentes que día a día aparecen de forma vertiginosa, con lo que esperamos se pueda a futuro corto mejorar el pronóstico de este tipo de entidades. 
+					
+					
+			+progreso-modulo('progreso10')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-3')
+			
+		//- progreso y contador
+		+paginador('#', 'disabled', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=308544&chapterid=9150', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

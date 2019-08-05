@@ -1,0 +1,67 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 1', 'Generalidades de la leucemia linfoblástica aguda')
+			
+			//- banner modulo 1
+			+banner-video('video-mod-1')
+			
+			h3 Bibliografía
+			
+			ul
+				li 2016, O. c., & 127(20):2391-2405., ). A. (2016). Organization classification of myeloid neoplasms and acute leukemia . Blood, 127(20):2391-2405.
+				li Agriello, E. C. (2017). Leucemias Agudas. Guías de Diagnóstico y Tratamiento, SAH, 337 - 339.
+				li al, B. e. (2005). Clinical manifestations of acute lymphoid leukemia. Hematology. Basic Principles and practice. Elservier, 1155 - 1162.
+				li CH, P. (1998). Acute lymphoblastic leukemia. N Engl J Med, 339(9):605-15.
+				li D, H. (1999). Acute Lymphoblastic leukemia in adults. En Text book of malignant hematology. (págs. 539 - 562). Londres.
+				li Dores GM1, D. S. (2012). Acute leukemia incidence and patient survival among children and adults in the United States, 2001-2007. Blood, 119(1):34-43.
+				li Hammond D, S. H. (1986). Analysis of prognostic factors in acute lymphoblastic Leukemia: a review. Med Pediatric Oncol, 124 - 134 .
+				li Hoelzer D, G. (2002). Acute Lymphoblastic Lukemia. Hematology (Am Soc Hematol Educ Program), 162-192.
+				li JM, B. (1976). Proposed revised criteria for the classification of acute leukaemias. Br J Haematol , 325 - 329.
+				li kk. (s.f.).
+				li Laurenti E, D. J. (2012). Molecular and functional characterizacion of early human hematopoiesis. Ann N Y Acad Sci, 68-71.
+				li Morrison SJ, S. D. (2014). The bone marrow niche for haematopoietic stem cells. Nature , 327 - 34.
+				li Rieger MA, S. T. (2012). Hematopoiesis. Cold Spring Harb Perspect Biol .
+				li Sabrafen, S. (2006). HEMATOLOGIA CLINICA. España: elservier.
+				li Shas S, e. a. (2013). A recurrent germline PAX5 mutation confers susceptibility to pre-B cell acute lymphoblastic leukemia. Nat Genet, 1226-1231.
+				li Weinberg OK, S. M. (2014). Mixed phenotype acute leukemia. Am J Clin Pathol., 142(6):803-8.
+				
+				
+			h3 Lecturas Recomendadas
+			
+			ul
+				li Manual Básico Razonado, 4 edición, autor Jesùs San Miguel, 2015, editorial Elservier
+				li Libro de Hematología Clìnica, 5 edición, autor J Sans- Sabrafen, 2006
+				li Guía de práctica clínica Versión para profesionales de la salud 2017 Guía No. 34 para la detección, tratamiento y seguimiento de leucemias linfoblástica en la población mayor de 18 años.
+
+
+					
+			+progreso-modulo('progreso100')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-1')
+			
+		//- progreso y contador
+		+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=303978&chapterid=9069', 'back', 'Anterior', '#', 'disabled', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

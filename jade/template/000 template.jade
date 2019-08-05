@@ -1,0 +1,156 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 0', 'Tema módulo')
+			
+			//- banner modulo 1
+			+banner-video('video-mod-1')
+			//- <div class="banner-videos"><div class="video-cc wow animated fadeInLeft" id="video"><div class="embed-container"><iframe src="https://drive.google.com/file/d/1c7XJIQhcWunMRWmM6HdvQgyJFZUymKGf/preview"></iframe></div></div></div>
+		
+			h2 Capítulo 1 / <span>Título del capítulo</span>
+			
+			p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round. Boudin andouille landjaeger, rump capicola jerky cupim ball tip. Meatball bacon tenderloin jowl prosciutto alcatra, tri-tip t-bone jerky shankle ball tip chuck cow fatback pastrami. Filet mignon t-bone buffalo pork loin meatloaf. Filet mignon bresaola swine prosciutto, leberkas turducken shankle flank pancetta buffalo chicken t-bone.
+			
+			//- Tabs
+			div.bs-docs
+				ul#myTab.nav.nav-tabs
+					li.active
+						a(href='#1' data-toggle='tab') 1
+					li
+						a(href='#2' data-toggle='tab') 2
+					li
+						a(href='#3' data-toggle='tab') 3
+					li
+						a(href='#4' data-toggle='tab') 4
+				div#myTabContent.tab-content
+					div.tab-pane.fade.active.in#1
+						p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round.
+					div.tab-pane.fade#2
+						p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round.
+					div.tab-pane.fade#3
+						p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round.
+					div.tab-pane.fade#4
+						p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round.
+			
+			//- Acordion
+			div.accordion#accordion2
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse1' aria-expanded='false')
+							span Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison.
+					div#collapse1.accordion-body.collapse.in
+						div.accordion-inner
+							p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round. Boudin andouille landjaeger, rump capicola jerky cupim ball tip. Meatball bacon tenderloin jowl prosciutto alcatra, tri-tip t-bone jerky shankle ball tip chuck cow fatback pastrami. Filet mignon t-bone buffalo pork loin meatloaf. Filet mignon bresaola swine prosciutto, leberkas turducken shankle flank pancetta buffalo chicken t-bone.
+							
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse2' aria-expanded='false')
+							span Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison.
+					div#collapse2.accordion-body.collapse
+						div.accordion-inner
+							p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round. Boudin andouille landjaeger, rump capicola jerky cupim ball tip. Meatball bacon tenderloin jowl prosciutto alcatra, tri-tip t-bone jerky shankle ball tip chuck cow fatback pastrami. Filet mignon t-bone buffalo pork loin meatloaf. Filet mignon bresaola swine prosciutto, leberkas turducken shankle flank pancetta buffalo chicken t-bone.
+							
+							
+						
+			//- Table
+			table.table.table-striped
+				caption Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison.
+				thead
+					tr
+						th Spicy jalapeno
+						th Spicy jalapeno
+						th Spicy jalapeno
+				tbody
+					tr
+						td Spicy jalapeno
+						td Spicy jalapeno
+						td Spicy jalapeno
+					tr
+						td Spicy jalapeno
+						td Spicy jalapeno
+						td Spicy jalapeno
+					tr
+						td.small(colspan='3') Spicy jalapeno
+						
+						
+			
+			//- imagen o video				
+			div.banner-video.wow.fadeInUp
+				div.imagen
+					div#video
+						figure.galeria
+							a.example-image-link(href='https://cdn2.geckoandfly.com/wp-content/uploads/2012/06/10.5.10.6-830x518.jpg#.XQ1SKt28bJQ.link' data-lightbox='example-1')
+								img.example-image(src='https://cdn2.geckoandfly.com/wp-content/uploads/2012/06/10.5.10.6-830x518.jpg#.XQ1SKt28bJQ.link' alt='image-1')
+				div.texto_imagen
+					div.img-footer
+						span Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison.
+						
+						
+			//- texto resaltado
+			div
+				div.resaltado-txt
+					p Spicy jalapeno bacon ipsum dolor amet cow tail short loin strip steak swine kielbasa pancetta beef ribs pork frankfurter venison. Pork belly buffalo capicola, picanha short ribs turkey porchetta pig alcatra venison ground round.
+					
+					
+			
+					
+			
+			//- Material modulo
+			//+material-modulo('material-mod-1')
+			<div class="wow fadeInUp material-modulo">
+				<div class="title">
+					<h2>Material del módulo en progreso</h2>
+				</div>
+				<div class="thumbnails">
+					<div class="thumbnail">
+						<img src="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/leucemia-amgen/images/mod-1/pdf01.jpg">
+							<div class="caption">
+								<h3>Presentación PDF </h3>
+								<p>Manejo de EPOC en atención primaria - Módulo 1 prevención primaria</p>
+								<p> <a href="https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301266&chapterid=9024" class="btn btn-primary">Ver Presentación </a> </p>
+							</div>
+					</div>
+					
+					<div class="thumbnail">
+						<img src="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/leucemia-amgen/images/mod-1/pdf01.jpg">
+							<div class="caption">
+								<h3>Presentación PDF </h3>
+								<p>Manejo de EPOC en atención primaria - Módulo 1 prevención primaria</p>
+								<p> <a href="https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301266&chapterid=9024" class="btn btn-primary">Ver Presentación </a> </p>
+							</div>
+					</div>
+					
+					<div class="thumbnail">
+						<img src="https://ubosquemoodle.unbosque.edu.co/diseno/cursos/leucemia-amgen/images/mod-1/pdf01.jpg">
+							<div class="caption">
+								<h3>Presentación PDF </h3>
+								<p>Manejo de EPOC en atención primaria - Módulo 1 prevención primaria</p>
+								<p> <a href="https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=301266&chapterid=9024" class="btn btn-primary">Ver Presentación </a> </p>
+							</div>
+					</div>
+				</div>
+			</div>
+			
+		//- progreso y contador
+		+paginador('#', 'back', 'Anterior', '#', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

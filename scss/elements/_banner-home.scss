@@ -1,0 +1,19 @@
+// -----------------------
+// banner home
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	.banners{
+		@include grid-child-column (2, 3);
+		@include grid-child-row (1, 2);
+		
+		@media (max-width: $tablet){
+			@include grid-child-column (1, 2);
+			@include grid-child-row (1, 2);
+		}
+			
+	}
+	
+}
