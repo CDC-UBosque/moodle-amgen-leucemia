@@ -1,0 +1,68 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 5', 'Cuidados de Enfermería y Administración segura de Blinatumumab')
+			
+			//- banner modulo 1
+			+banner-video('video-mod-5')
+
+				
+			h3 Referencias
+			
+			ol
+				li Blincyto. Información para prescribir vigente. Junio 2016
+
+				li Diedra L.Bragalone. Drug Information Handbook for Oncology.14 edition. American Pharmacists Association.2016
+
+				li Marco Picardi, Roberta Della Pepa, Claudio Cerchione, Novella Pugliese, Chiara Mortaruolo, et al. A Frontline Approach With Peripherally Inserted Versus Centrally Inserted Central Venous Catheters for Remission Induction Chemotherapy Phase of Acute Myeloid Leukemia: A Randomized Comparison. Clinical Lymphoma, Myeloma & Leukemia April 2019: e184-94.   
+					a(href='https://doi.org/10.1016/j.clml.2018.12.008.' target='_blank')  https://doi.org/10.1016/j.clml.2018.12.008.
+
+				li Nagorsen D, Kufer P, Baeuerle PA, Bargou R. Blinatumomab: A historical perspective. Pharmacol Ther [Internet]. 2012;136(3):334–42. Available from:  
+					a(href='http://dx.doi.org/10.1016/j.pharmthera.2012.07.013' target='_blank')  http://dx.doi.org/10.1016/j.pharmthera.2012.07.013
+
+				li Catéteres venosos centrales. American Cancer Society. 2016 Disponible en:  
+					a(href='https://www.cancer.org/es/tratamiento/tratamientos-y-efectos-secundarios/cateteres-venosos-centrales.html' target='_blank')  https://www.cancer.org/es/tratamiento/tratamientos-y-efectos-secundarios/cateteres-venosos-centrales.html.
+					| Consultado 29/06/2019
+
+				li Gökbuget N, Dombret H, Bonifacio M, Reichle A, Graux C, Faul C, et al. Blinatumomab for minimal residual disease in adults with B-cell precursor acute lymphoblastic leukemia. Blood. 2018;131(14):1522–31.
+
+				li Aldoss I, Khaled SK, Budde E, Stein AS. Cytokine Release Syndrome With the Novel Treatments of Acute Lymphoblastic Leukemia: Pathophysiology, Prevention, and Treatment. Curr Oncol Rep. 2019;21(1).
+
+				li Topp MS, Gökbuget N, Stein AS, Zugmaier G, O’Brien S, Bargou RC, et al. Safety and activity of blinatumomab for adult patients with relapsed or refractory B-precursor acute lymphoblastic leukaemia: A multicentre, single-arm, phase 2 study. Lancet Oncol. 2015;16(1):57–66.
+
+				li Prospecto profesional de BLINCYTO (Blinatumomab). Laboratorios Amgen. 2016
+
+				li Roberta Kaplow, Renee Spinks. Neutropenia : A nursing perspective. Elsevier Inc. 2015;297-08.  
+					a(href='http://dx.doi.org/10.1016/j.currproblcancer.2015.07.009' target='_blank')   http://dx.doi.org/10.1016/j.currproblcancer.2015.07.009
+						
+						
+					
+			+progreso-modulo('progreso100')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-5')
+			
+		//- progreso y contador
+		+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=310373&chapterid=9177', 'back', 'Anterior', '#', 'disabled', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -1,0 +1,79 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 5', 'Cuidados de Enfermería y Administración segura de Blinatumumab')
+			
+			//- banner modulo 1
+			+banner-video('video-mod-5')
+
+				
+			h3 ¿Cuáles son las necesidades de los pacientes hospitalizados con LLA? 
+			
+			p La principal necesidad del paciente es de información, saber qué tiene, cómo se lo van a resolver, cuánto durará el tratamiento, si duele o no y su principal miedo: LA MUERTE. Cuando a los pacientes se les empieza a suministrar toda la educación e información, se disminuye la ansiedad y se inicia a recorrer en equipo un camino difícil más no imposible para ellos.
+			
+			h3 ¿Cómo orientar y educar al paciente con LLA y su familia? 
+			
+			p Los temas para abordar en la educación al paciente y/o cuidador desde su ingreso deben ir alineados con las necesidades identificadas, los siguientes temas deben ser abordados desde la perspectiva de enfermería:
+			
+			ul
+				li El diagnóstico.
+				li El tratamiento y sus efectos secundarios.
+				li Las complicaciones infecciosas.
+				li El requerimiento transfusional de los hemocomponentes.
+				li Soporte nutricional.
+				li Red de apoyo o su ausencia.
+				
+			p Las recomendaciones y orientaciones siempre deben estar fundamentadas científicamente y encaminadas a la seguridad del paciente, por ejemplo cuando se le habla de consumir la dieta para neutropénicos, se hace referencia a la manipulación de los alimentos y se aclara que se busca  minimizar el riesgo de infecciones, algunos pacientes piensan que tienen restricciones de algunos alimentos , pero el rol de la enfermera es aclarar los riesgos de consumir alimentos contaminados por la manipulación , más no por el tipo de alimento. (10)
+			
+			h3 ¿Qué debo saber previo a la administración de Blinatumomab? 
+			
+			p El personal de enfermería también juega un papel importante en la lista de chequeo previa a la administración de Blinatumomab, su conocimiento y gestión se convierten en una barrera de seguridad para el paciente, por lo tanto, se propone hacer una pequeña lista de chequeo así: 
+			
+			ol
+				li Conocer el resultado del último aspirado de medula ósea: esto permite saber cuál es la carga tumoral con la que se iniciará el tratamiento, en algunos casos el medico Hematólogo puede considerar la citoreducción en pacientes con >50% de blastos leucémicos.
+
+				li Verificar si se realizó estudio del líquido cefalorraquídeo: es importante que el paciente no tenga enfermedad activa en el sistema nervioso central.
+
+				li Revisar laboratorios como el hemograma, transaminasas y bilirrubina total.
+
+				li Pedir la realización de prueba de embarazo para las mujeres en edad fértil: no se ha establecido la eficacia y la seguridad de BLINCYTO en mujeres embarazadas, no se conoce si puede producir daños fetales cuando se administra y por ende su uso  durante el embarazo no es recomendado. (1)
+
+				li Realizar una valoración de enfermería previo al inicio: esto permite conocer el actual estado físico y psicológico del paciente, los síntomas presentes antes de la infusión que eviten confusión o dudas con los que se puedan presentar como efecto del medicamento.
+
+				li Valoración de acceso venoso: se realiza valoración de las posibles vías de acceso intravenoso, con el fin de garantizar una vía central exclusiva por ser una infusión de más de 24 horas (mínimo 28 días si no hay interrupciones).
+
+				li Consentimiento informado: no solo se debe revisar si el paciente firmó el documento donde autoriza la administración del tratamiento con blinatumomab, en esta fase previa es importante que no existan dudas sobre el medicamento y sus posibles efectos secundarios, con el fin de hacer una identificación inmediata de síntomas cuando se inicie la infusión, el paciente y su cuidador son los primeros en percatar cualquier signo o síntoma, ellos también son una barrera de seguridad, alertan rápidamente al equipo de salud.
+			
+			
+						
+					
+					
+			+progreso-modulo('progreso30')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-5')
+			
+		//- progreso y contador
+		+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=310373&chapterid=9172', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=310373&chapterid=9174', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

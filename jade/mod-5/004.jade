@@ -1,0 +1,93 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 5', 'Cuidados de Enfermería y Administración segura de Blinatumumab')
+			
+			//- banner modulo 1
+			+banner-video('video-mod-5')
+
+				
+			h3 ¿Qué es un ciclo de Blinatumomab? 
+			
+			p Un ciclo de blinatumomab hace referencia a la administración del medicamento durante 4 semanas, es decir 28 días, seguidas de 2 semanas sin administrar el medicamento. Los pacientes pueden recibir 2 ciclos de inducción y 3 ciclos de consolidación. (1)
+			
+			h3 ¿Cuál es la dosis de Blinatumomab que se va a administrar?  
+			
+			p La dosis inicial recomendada de blinatumomab en el primer ciclo es de 9 mcg/día durante una semana (7 días), en el día 8 se realiza un incremento de la dosis a 28 mcg/día hasta el día 28 del 1er ciclo de tratamiento. La dosis de los demás ciclos subsiguientes se inicia a 28 mcg/día desde el primer día y durante las 4 semanas de cada ciclo. (1,2)
+			
+			h3 ¿Cómo se premedica al paciente antes de iniciar la infusión de Blinatumomab? 
+			
+			p Se debe premedicar con 20 mg de dexametasona vía intravenosa 1 hora antes de iniciar cada ciclo de tratamiento con BLINCYTO.
+			p Si necesita reiniciar la infusión: premedicar con 24 mg de dexametasona, ir disminuyendo la dosis progresivamente durante 4 días.
+			
+			h3 ¿Cuándo suspender temporal o definitivamente la infusión de Blinatumomab? 
+			
+			p Suspender la infusión si ocurre lo siguiente:
+			
+			
+			ul
+				li Eventos neurológicos Grado 3* (severos) a dosis de 28 mcg/día
+				li Eventos no neurológicos Grado 4* (que amenazan la vida) 
+				
+				
+			//- Acordion
+			div.accordion#accordion2
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse1' aria-expanded='false')
+							span Eventos Neurológicos Grado 3* (severos)
+					div#collapse1.accordion-body.collapse
+						div.accordion-inner
+							p Una vez se obtenga mejoría a Grado 1* (leve) o se retorne a la condición de base, reiniciar el tratamiento a 9 mcg/día bajo la supervisión de un profesional de la salud. La dosis puede incrementarse hasta 28 mcg/día. (1,9)
+							p Para el reinicio, premedicar con 24 mg de dexametasona con una disminución progresiva durante 4 días. Como profilaxis secundaria, considerar medicación anticonvulsivante apropiada. (1,9)
+							
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse2' aria-expanded='false')
+							span  Eventos No neurológicos Grado 4* (que amenazan la vida)
+					div#collapse2.accordion-body.collapse
+						div.accordion-inner
+							p Una vez se obtenga la mejoría a grado 1* (leve) o se retorne a la condición de base, reiniciar el tratamiento a 9 mcg/día o 28 mcg/día bajo la supervisión de un profesional de la salud. Si se reinicia a 9 mcg/día, la dosis puede incrementarse hasta 28 mcg/día. Si la interrupción del tratamiento es menor a 1 semana, continuar el ciclo hasta completar 4 semanas de tratamiento con BLINCYTO. Si la interrupción del tratamiento es mayor a 1 semana, iniciar un nuevo ciclo. (1,9)
+							p Para los eventos no neurológicos Grado 4* (que amenazan la vida), se recomienda una evaluación beneficio-riesgo para determinar si el tratamiento con BLINCYTO se reinicia o se suspende de manera definitiva. (1,9)
+			
+			
+			h4 Considerar la interrupción definitiva si se presenta lo siguiente: 			
+			
+			ul
+				li Evento neurológico Grado 4* (que amenazan la vida) 
+				li Más de una convulsión 
+				li Evento neurológico que conlleva a la interrupción del tratamiento que requiere más de una semana para su resolución o mejoría a Grado 1* (leve) 
+				li Evento neurológico Grado 3* (severo) que ocurre a dosis de 9 mcg/día que lleva a la interrupción del tratamiento. (9)
+
+			p *Los Grados se basan en NCI Common Terminology Criteria for Adverse Events (CTCAE) versión 4.0
+					
+					
+			+progreso-modulo('progreso50')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-5')
+			
+		//- progreso y contador
+		+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=310373&chapterid=9173', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=310373&chapterid=9175', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

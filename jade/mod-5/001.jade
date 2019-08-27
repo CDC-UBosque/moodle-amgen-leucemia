@@ -1,0 +1,72 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 5', 'Cuidados de Enfermería y Administración segura de Blinatumumab')
+			
+			//- banner modulo 1
+			+banner-video('video-mod-5')
+			
+			p 
+				b TUTOR: 
+				| Mónica Patricia Márquez Feduyo
+				br/ Enfermera Especialista en Enfermería Oncológica – Pontificia Universidad Javeriana
+				br/ Especialista en Auditoria de la calidad en salud – Universidad de Córdoba
+				br/ Diplomado en inmunohematología y medicina transfusional – Pontificia Universidad Javeriana
+				br/ Curso experto en hematología (en proceso)
+				br/ Enfermera del servicio de Hematología (unidad de Leucemias Agudas) del Instituto Nacional de Cancerología E.S.E 
+
+				
+			h3 Objetivos del Aprendizaje
+			
+			//- Tabs
+			div.bs-docs
+				ul#myTab.nav.nav-tabs
+					li.active
+						a(href='#1' data-toggle='tab') 1
+					li
+						a(href='#2' data-toggle='tab') 2
+				div#myTabContent.tab-content
+					div.tab-pane.fade.active.in#1
+						p Conocer los pasos para una administración segura de Blinatumomab en pacientes adultos con LLA de precursores B.
+					div.tab-pane.fade#2
+						p Identificar los cuidados de enfermería básicos y específicos previos y durante la administración del Blinatumomab en pacientes adultos con LLA de precursores B.
+			
+			
+			h3 Introducción
+			
+			p Los pacientes adultos con diagnóstico de Leucemia Linfoblástica Aguda de precursores B, son tratados con diferentes líneas de tratamiento, una vez se confirma su diagnóstico se le ofrece un esquema dirigido que da inicio a una fase de inducción (1er ciclo de quimioterapia), si todo avanza positivamente hacia el control de la enfermedad, se pasa a la siguiente fase de consolidación del tratamiento, durante todo este duro recorrido para un paciente con LLA se presentan complicaciones propias del tratamiento como: la inmunosupresión, trombocitopenia, anemia e infecciones entre otras, lo que conlleva a requerimientos de soporte transfusional y terapia de antibióticos.
+			p También existe el escenario de los pacientes que no responden a la quimioterapia de inducción y/o que recaen en alguna de sus consolidaciones, estos pacientes con recaída o refractariedad de la enfermedad deben ser rescatados con otra línea de medicamentos. En el caso de la LLA de precursores B en recaída o refractaria se presenta la opción de la inmunoterapia con el Blinatumomab.
+			p El paciente con leucemia durante su tratamiento con quimioterapia y/o inmunoterapia también se ve expuesto a incidentes o errores durante la administración de los medicamentos, por lo que es fundamental que el personal de enfermería no solo conozca las toxicidades y efectos causados por los medicamentos sino también adquiera la habilidad para identificar los riesgos durante la administración y hacer de esta un procedimiento seguro.
+			p Para realizar la administración segura de cualquier tratamiento oncológico, es necesario conocer las moléculas, su mecanismo de acción, su estabilidad, su vía de administración, el tiempo de infusión, dosis, indicación, intención del tratamiento, toxicidades y complicaciones de este, de esta manera el personal de enfermería tiene las herramientas para planear y ejecutar un adecuado plan de cuidados que le permita al paciente con cáncer sentirse tranquilo y seguro durante su tratamiento.
+			p La administración adecuada de inmunoterapias como el blinatumomab requiere de unos cuidados específicos e implementación de barreras de seguridad, por eso en el siguiente capítulo se explicarán las toxicidades que se pueden presentar durante su administración, el rol de enfermería para una administración segura y por supuesto la forma de administración.
+					
+					
+			+progreso-modulo('progreso10')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-5')
+			
+		//- progreso y contador
+		+paginador('#', 'disabled', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=310373&chapterid=9172', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

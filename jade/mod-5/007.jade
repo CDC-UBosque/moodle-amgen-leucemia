@@ -1,0 +1,154 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 5', 'Cuidados de Enfermería y Administración segura de Blinatumumab')
+			
+			//- banner modulo 1
+			+banner-video('video-mod-5')
+
+				
+			h3 Grados en el síndrome de liberación de citoquinas (7) 
+			
+			//- Table
+			table.table.table-striped
+				//- caption Figura 3: eventos adversos no neurológicos y neurológicos. (6).
+				thead
+					tr
+						th Signos/síntomas 
+						th Grado 1
+						th Grado 2
+						th Grado 3
+						th Grado 4
+				tbody
+					tr
+						td Fiebre 
+						td &ge;38 °c
+						td &ge;38 °c
+						td &ge;38 °c
+						td &ge;38 °c
+					tr
+						td &nbsp;
+						td &nbsp;
+						td &nbsp;
+						td Con
+						td &nbsp;
+					tr
+						td Hipotensión  
+						td No 
+						td No requiere vasopresor
+						td Requiere un vasopresor con o sin vasopresina 
+						td Requiere múltiples vasopresores (excluyendo vasopresina)
+					tr
+						td &nbsp;
+						td &nbsp;
+						td &nbsp;
+						td y/o
+						td &nbsp;
+					tr
+						td Hipoxia  
+						td No 
+						td Cánula nasal de bajo flujo
+						td Requiere cánula de alto flujo, mascara de no reinhalacion o mascara ventury
+						td Requiere presión positiva (CPAP,BIPAP,IOT,VM)
+			
+			
+			h3 Protocolo de administración de Blinatumumab en la unidad de leucemias agudas del instituto nacional de cancerología 
+			
+			//- Table
+			table.table.table-striped
+				//- caption Figura 3: eventos adversos no neurológicos y neurológicos. (6).
+				thead
+					tr
+						th Situación 
+						th Acción 
+				tbody
+					tr
+						td Vía de acceso venoso 
+						td Catéter central a través de una vía exclusiva.
+					tr
+						td Tiempo de infusión 
+						td Infusión continua de 24 horas por bomba de infusión 
+					tr
+						td Premedicación 
+						td Dexametasona 20 mg intravenosa: 
+							br/ Uno hora antes de la primera dosis
+							br/ Cuando se realice el aumento de la dosis
+							br/ Luego de suspensión de más de dos horas
+					tr
+						td Otras condiciones  
+						td Si el recuento de blastos en medula ósea es mayor del 50 % o el recuento de leucocitos > 15.000/mm<sup>3</sup>, administrar dexametasona 24 mg IV por 4 días, antes de la primera dosis.
+					tr
+						td Vigilancia  
+						td Intrahospitalaria 
+							br/ Registro de signos vitales
+							br/ Control de peso diario
+							br/ Vigilancia de síntomas neurológicos
+					tr
+						td Laboratorios   
+						td Hemograma: diario
+							br/ Función hepática: Inter diario
+							br/ Amilasa: Inter diario
+							br/ Ferritina: semanal
+							
+			
+			
+			h3 Esquema de tratamiento con Blinatumomab en adultos con LLA recaida o refractaria. (4,8) 
+			
+			//- Table
+			table.table.table-striped
+				//- caption Figura 3: eventos adversos no neurológicos y neurológicos. (6).
+				thead
+					tr
+						th Inducción  
+						th Consolidación  
+				tbody
+					tr
+						td Hasta dos ciclos de tratamiento
+						td Tres ciclos de consolidación
+					tr
+						td Un ciclo: Infusión IV continua durante 28 días, seguido de dos semanas de intervalo (42 días)
+						td Un ciclo: Infusión IV continua durante 28 días, seguido de dos semanas de intervalo (42 días)
+					tr
+						td Inducción ciclo 1: 
+							br/ Día 1 al 7: 9mcg/día IV en infusión continua
+							br/ Día 8 al 28: 28mcg/día IV en infusión continua
+							br/ Día 29 al 42: sin tratamiento
+						td Todos los ciclos de consolidación:
+							br/ Días 1 al 28: 28 mcg/día IV en infusión continua
+							br/ Días 29 al 42: sin tratamiento
+					tr
+						td Inducción ciclo 2:  Días 1 al 28: 28mcg/día IV en infusión continua
+						td 
+						
+						
+						
+					
+			+progreso-modulo('progreso90')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-5')
+			
+		//- progreso y contador
+		+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=310373&chapterid=9176', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=310373&chapterid=9178', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			
