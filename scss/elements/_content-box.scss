@@ -80,6 +80,24 @@
 				transition: all .2s ease-in-out;
 			}
 			
+			.footnotes{
+				
+				margin: 2rem auto 4rem;
+				border-top: 1px solid #0063C3;
+				padding-top: 2rem;
+				
+				p{
+					@include font_universal (
+						$font_family_line_height: 16px,
+						$font_family_weight: 300,
+						$font_family_size: 12px,
+						$font_family_color: $color_text,
+						$font_family_group: $font_arial
+					);
+				}
+				
+			}
+			
 		}
 		
 	}

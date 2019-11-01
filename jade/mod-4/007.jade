@@ -1,0 +1,52 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 4', 'Buenas prácticas de farmacia- Preparación de Blinatumomab ')
+			
+			//- banner modulo 4
+			+banner-video('video-mod-4')
+
+				
+			h3 Bibliografía
+			
+			ol
+				li NIH.  Instituto Nacional del Cáncer.  Diccionario de Cáncer.
+				li Fármacos Antineoplásicos. J. Bendi.  Ma. Gómez. Facultad de Farmacia UCM.  Revista Farmacia Profesional.  Vol. 20.  Num. 2.  Pags. 60 – 65.  Febrero 2006
+				li Leucemia Linfocítica Aguda en Adultos.  American Cancer Society.  Art. Tratamientos Típicos de la LLA. Octubre, 2018
+				li Informe de Posicionamiento Terapéutico de blinatumomab (Blincyto®) en leucemia linfoblástica aguda con cromosoma Philadelphia negativo en situación de refractariedad o en recaída IPT, 27/2017. V1 Fecha de publicación: 31 de julio de 2017
+				li Blinatumomab (Blincyto®).  Equipo OncoLink.  16 de julio de 2019
+				li Leucemia Linfocítica Aguda en Adultos.  American Cancer Society.  Art. Inmunoterapia para la LLA.  Octubre, 2018
+				li Ficha Técnica o Resumen de las Características del Producto.  Blincyto.  AMGEN – Colombia
+				li Información importante para farmacéuticos sobre prevención de riesgos.  Agencia española de Medicamentos y Productos Sanitarios (AEMPS).  Mayo 2016
+			
+					
+					
+			+progreso-modulo('progreso100')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-4')
+			
+		//- progreso y contador
+		+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=317949&chapterid=9257', 'back', 'Anterior', '#', 'disabled', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

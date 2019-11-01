@@ -1,0 +1,100 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 4', 'Buenas prácticas de farmacia- Preparación de Blinatumomab ')
+			
+			//- banner modulo 4
+			+banner-video('video-mod-4')
+
+				
+			h3 Posibles efectos secundarios
+			
+			//- Acordion
+			div.accordion#accordion2
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse1' aria-expanded='false')
+							span Síndrome de liberación de citocinas o reacciones a la infusión 
+					div#collapse1.accordion-body.collapse
+						div.accordion-inner
+							p Puede producirse síndrome de liberación de citocinas (SLC). Las células T son activadas por el medicamento antes de ser destruidas, lo que produce una liberación de gran cantidad de citocinas. Las citocinas causan una respuesta inflamatoria en el organismo, como si el cuerpo tuviera una infección grave. Esta reacción, si no se trata, puede ser muy peligrosa. El equipo de atención médica lo controlará minuciosamente para detectar SLC o una reacción alérgica. Durante la infusión, si experimenta dificultad para respirar, edema facial, hipotensión, dolor torácico,, taquicardia, tos o dificultad respiratoria, urticaria o sarpullido, náuseas o vómitos, dolor de cabeza, fiebre, escalofríos o temblores, informe inmediatamente al enfermero/a y al médico tratante. 
+							
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse2' aria-expanded='false')
+							span Problemas neurológicos
+					div#collapse2.accordion-body.collapse
+						div.accordion-inner
+							p Los pacientes pueden experimentar serias complicaciones neurológicas, que pueden ocurrir en cualquier momento, incluso una semana o más después de la infusión. Estos incluyen convulsiones, confusión, desorientación, dificultad para hablar o habla arrastrada, pérdida del equilibrio y pérdida del conocimiento.
+							
+							
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse3' aria-expanded='false')
+							span Infección y recuento bajo de glóbulos blancos (leucopenia o neutropenia)
+					div#collapse3.accordion-body.collapse
+						div.accordion-inner
+							p Este medicamento puede causar infecciones potencialmente mortales, con o sin disminución de los recuentos de glóbulos blancos.
+							p Los glóbulos blancos (GB) son importantes para combatir las infecciones. Mientras recibe tratamiento, el recuento de glóbulos blancos puede disminuir, lo que aumenta el riesgo de que contraiga una infección.
+							p fiebre (temperatura mayor a 38°C o 100.4°F), dolor de garganta o resfriado, falta de aliento, tos, ardor al orinar o un dolor persistente.
+							
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse4' aria-expanded='false')
+							span Reacciones alérgicas
+					div#collapse4.accordion-body.collapse
+						div.accordion-inner
+							p En algunos casos, los pacientes pueden tener una reacción alérgica a este medicamento. Los signos de una reacción pueden incluir: Dificultad para respirar, dolortorácico, rash, prurito, o una disminución en la presión arterial. 
+							
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse5' aria-expanded='false')
+							span Bajo recuento de glóbulos rojos (anemia)
+					div#collapse5.accordion-body.collapse
+						div.accordion-inner
+							p Los glóbulos rojos son responsables de transportar oxígeno a los tejidos del cuerpo. Cuando el recuento de glóbulos rojos es bajo, puede sentirse cansado o débil.  Si el recuento es demasiado bajo, puede recibir una transfusión de sangre.
+							
+				div.accordion-group
+					div.accordion-heading
+						a.accordion-toggle(data-toggle='collapse' data-parent='#accordion2' href='#collapse6' aria-expanded='false')
+							span Bajo recuento de plaquetas (trombocitopenia)
+					div#collapse6.accordion-body.collapse
+						div.accordion-inner
+							p Las plaquetas ayudan a la coagulación de la sangre, por lo que cuando el recuento es bajo tiene un mayor riesgo de sangrado.  Algún exceso de hematomas o sangrado, por ejemplo, sangrado nasal, encías sangrantes, o sangre en la orina o las heces. Si el recuento de plaquetas es demasiado bajo, puede recibir una transfusión de plaquetas.
+			
+						
+			h3 Interacciones entre medicamentos
+			
+			p Los resultados de un ensayo in vitro en hepatocitos humanos sugieren que blinatumomab no afectó las actividades de la enzima CYP450. 
+			p La elevación transitoria de las citoquinas puede afectar las actividades de la enzima CYP450. Basado en el modelo farmacocinético basado en fisiología (PBPK), el efecto de la elevación transitoria de citoquinas sobre las actividades de las enzimas CYP450 es menor del 30%, durando menos de una semana; el efecto sobre la exposición a los sustratos sensibles a CYP450 es menor que el doble. Por lo tanto, la elevación de citoquinas mediada por blinatumomab parece tener bajo potencial de interacción con medicamentos clínicamente significativa.
+					
+					
+			+progreso-modulo('progreso50')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-4')
+			
+		//- progreso y contador
+		+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=317949&chapterid=9254', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=317949&chapterid=9256', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

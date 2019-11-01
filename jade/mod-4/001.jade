@@ -1,0 +1,70 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 4', 'Buenas prácticas de farmacia- Preparación de Blinatumomab ')
+			
+			//- banner modulo 4
+			+banner-video('video-mod-4')
+			
+			p 
+				b TUTOR:   
+				| Edwin Enrique Mondul Martínez   
+				br/ Profesional Químico Farmacéutico, egresado de la Universidad del Atlántico.  17 años de experiencia en escenarios relacionados con el área de la salud con énfasis en las terapias antineoplásicas. Dentro de los diferentes ámbitos laborales he desempeñado el cargo de Coordinador de central de mezclas durante 17 años, lo que me ha brindado la experiencia en el manejo de diferentes medicamentos para el manejo del cáncer, no solo desde la parte técnica de su manipulación, sino también desde la parte práctica del uso en los pacientes. Docente con desarrollo de asignaturas como: Toxicología, Buenas Prácticas de Dispensación, Laboratorios prácticos de Farmacotécnia, Farmacognosia y Farmacia Magistral, Gases Medicinales, Fundamentos de Investigación. 
+
+				
+			h3 Objetivos generales
+			
+			//- Tabs
+			div.bs-docs
+				ul#myTab.nav.nav-tabs
+					li.active
+						a(href='#1' data-toggle='tab') 1
+					li
+						a(href='#2' data-toggle='tab') 2
+					li
+						a(href='#3' data-toggle='tab') 3
+				div#myTabContent.tab-content
+					div.tab-pane.fade.active.in#1
+						p Dar información a los profesionales de la salud, especialmente a los encargados de los procesos farmacéuticos, acerca de la importancia del conocimiento de las terapias (protocolos médicos) basados en la medicación utilizada en los diferentes pacientes.  Esto con el fin de mejorar la comunicación asertiva entre las partes, evitando errores de medicación.
+					div.tab-pane.fade#2
+						p Fortalecer a los profesionales de la salud en los conceptos inherentes a la manipulación efectiva de las sustancias medicamentosas utilizadas en las diversas terapias antineoplásicas e inmunoterapias en el tratamiento de la LLA, basados en la ética y responsabilidad de los participantes.
+					div.tab-pane.fade#3
+						p Establecer un camino, en lo posible el camino ideal, para obtener los máximos resultados positivos en el actor más importante de nuestro sistema de salud, el paciente, brindando no solo una buena atención médica, sino también, asistencial y farmacéutica, hablando todos el mismo idioma, que es el idioma del paciente.
+			
+			
+			h3 Introducción
+			
+			p El presente modulo busca brindarle información necesaria para orientarlos en un mundo extenso e interesante y muy inexplorado como lo es el mundo de las enfermedades leucémicas, especialmente en las diferentes terapias utilizadas para el tratamiento de la enfermedad.  
+			p Daremos cuenta de la evolución que hemos tenido a nivel mundial con respecto a los tratamientos concebidos para su contrarrestación y cura, evolución a la cual nuestro país, Colombia no ha sido ajeno, gracias a la intervención de la industria farmacéutica y su accesibilidad para la mayoría de los pacientes.
+			p Todas y cada una de las terapias utilizadas cuenta con ventajas y desventajas, pero es precisamente la evolución de las terapias lo que hace que hoy podamos contar con medicamentos más avanzados, dirigidos, especializados.
+					
+					
+			+progreso-modulo('progreso10')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-4')
+			
+		//- progreso y contador
+		+paginador('#', 'disabled', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=317949&chapterid=9253', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

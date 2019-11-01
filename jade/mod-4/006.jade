@@ -1,0 +1,51 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 4', 'Buenas prácticas de farmacia- Preparación de Blinatumomab ')
+			
+			//- banner modulo 4
+			+banner-video('video-mod-4')
+
+				
+			h3 Artículos relacionados
+			
+			p Minimizing waste during preparation of blinatumomab infusions.  AM J HEALTH-SYST PHARM.  Volume 73.  Number 2.  January 15. 2016
+
+			p HIGHLIGHTS OF PRESCRIBING INFORMATION.  These highlights do not include all the information needed to use BLINCYTO®   safely and effectively. See full prescribing information for BLINCYTO.   BLINCYTO® (blinatumomab) for injection, for intravenous use.    Initial U.S. Approval: 2014.   Revised: 5/2018
+			
+			h3 Lecturas recomendadas
+			
+			p Artículo nuevo en The Lancet Oncology sobre Blinatumomab como tratamiento de rescate de la leucemia linfoblástica aguda.  The Lancet Oncology. 2015. Jan 16 (1): 57-66 doi: 10.1016/S1470-2045(14)71170-2. Epub 2104. Dec 16
+			p Informe de Posicionamiento Terapéutico de blinatumomab (Blincyto®) en leucemia linfoblástica aguda con cromosoma Philadelphia negativo en situación de refractariedad o en recaída IPT, 27/2017. V1 Fecha de publicación: 31 de julio de 2017			
+			
+					
+					
+			+progreso-modulo('progreso90')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-4')
+			
+		//- progreso y contador
+		+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=317949&chapterid=9256', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=317949&chapterid=9258', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

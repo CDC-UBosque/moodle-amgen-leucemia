@@ -1,0 +1,114 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 4', 'Buenas prácticas de farmacia- Preparación de Blinatumomab ')
+			
+			//- banner modulo 4
+			+banner-video('video-mod-4')
+
+				
+			h3 Tratamientos
+			
+			p El principal tratamiento de la leucemia linfocítica aguda (ALL) en adultos es generalmente quimioterapia a largo plazo. En los últimos años, los médicos han comenzado a utilizar regímenes de quimioterapia más intensivos, lo que ha conducido a más respuestas al tratamiento. Pero estos regímenes también tienen más probabilidades de causar efectos secundarios, como recuentos bajos de glóbulos blancos. Es posible que los pacientes necesiten tomar otros medicamentos para prevenir o tratar estos efectos secundarios.
+			p Por lo general, el tratamiento consiste en tres fases:
+			
+			ul
+				li 
+					b Inducción   
+					| (inducción de la remisión)
+				li 
+					b Consolidación   
+					| (intensificación)
+				li Mantenimiento
+			
+			p Por lo general, el tratamiento total tarda aproximadamente 2 años, siendo la fase de mantenimiento la que requiere más tiempo.
+			p La ALL se puede propagar al área que rodea el cerebro y la médula espinal. Algunas veces, esto ya ha ocurrido cuando se realiza por primera vez el diagnóstico de la ALL. Esta propagación se descubre cuando el médico realiza una punción lumbar y se descubren células leucémicas en el líquido cefalorraquídeo que rodea el cerebro y la médula espinal
+			
+			
+			h3 Inducción
+			
+			p El objetivo de la quimioterapia de inducción es lograr que la leucemia entre en remisión (remisión completa). Esto significa que ya no se encuentran células leucémicas o están presentes en un porcentaje &lt;5% en las muestras de médula ósea (en la biopsia de la médula ósea), que regresan las células normales de la médula y que los recuentos de células sanguíneas retornan a niveles normales. Sin embargo, una remisión no es necesariamente una cura, ya que las células leucémicas aún pudieran estar escondidas en algún lugar del cuerpo.
+			p La quimioterapia de inducción generalmente dura alrededor de un mes. Puede que se usen diferentes combinaciones de medicamentos de quimioterapia, aunque generalmente incluye:
+			
+			ul
+				li Vincristina
+				li Dexametasona o prednisona
+				li Un medicamento con antraciclina, como doxorrubicina (Adriamycin) o daunorrubicina.
+				
+			p La Vincristina es un antineoplásico que pertenece al grupo de Antineoplásicos de origen vegetal 
+			p La vincristina y los demás alcaloides de la vinca ejercen sus efectos citotóxicos interfiriendo con los microtúbulos que forman los husos mitóticos durante la metafase, interrumpiendo así el ciclo celular. Estos alcaloides se unen a las subunidades a y b de la tubulina en la fase S del ciclo celular. Como consecuencia, la tubulina no puede polimerizarse para formar los microtúbulos que intervienen en varias funciones celulares, como la formación del huso mitótico, el desplazamiento de neurotransmisores a través de los axones, etc. Las estructuras microtubulares se agregan formando protofilamentos que experimentan una desintegración creciente. 
+			p Este tipo de mecanismo de acción hace que la Vincristina y otros alcaloides de la Vinca se conviertan en fármacos de elección para el tratamiento de enfermedades proliferativas muy rápidas, como el caso de la LLA.
+			p Para el caso de las antraciclinas, que pertenecen al grupo de los Antibióticos citotóxicos, son sustancias naturales producidas fundamentalmente por hongos capaces de alterar el crecimiento de otras células vivas.
+			p Las antraciclinas son sustancias coloreadas producidas por el hongo Streptomyces y con un mecanismo de acción múltiple. La molécula de antraciclina se intercala entre las bases del ADN y produce alteraciones de la replicación y la transcripción proteica. Además, estos compuestos provocan una inhibición de la topoisomerasa tipo II, enzima que mantiene la estructura terciaria del ADN, lo que da lugar a la rotura del ADN y la alteración de los procesos de reparación (muerte celular). Finalmente, producen una alteración de la membrana celular uniéndose a proteínas específicas, como la cardiolipina, que dan lugar a la producción de radicales libres, causantes de la cardiotoxicidad de estos compuestos.
+			p El uso de antraciclinas obliga a la prescripción de cardioprotectores (Dexrazoxane), sobre todo en aquellos pacientes cuyo riesgo cardiovascular es alto, teniendo en cuenta que el aumento de radicales libres en sangre puede ser causa de muerte súbita.
+			p Algunos regímenes también pueden incluir ciclofosfamida, L-asparaginasa (o pegaspargasa), y/o altas dosis de metotrexato o citarabina (ara-C) como parte de la fase de inducción.
+			p La Ciclofosfamida pertenece al grupo de los Alquilantes. Estos fármacos, los más utilizados en quimioterapia antineoplásica, lesionan el ADN e interfieren en la replicación celular. Provocan su acción citotóxica mediante la formación de enlaces covalentes entre sus grupos alquilo y diversas moléculas nucleófilas presentes en las células, especialmente las bases nitrogenadas del ADN. De este modo, bloquean la replicación del ADN celular y la transcripción del ARN y, por tanto, la mitosis y la síntesis de proteínas. Ejercen su acción durante todo el ciclo celular, pero son más activos sobre las células en rápida división.
+			p Esta característica los hace fármacos de primera elección en el tratamiento de LLA.
+			p La Citarabina, también conocida como Arabinósido de Citosina, pertenece al grupo de los Antimetabolitos.  Estos fármacos tienen una estructura similar a la de los componentes del metabolismo intermediario celular, de modo que interfieren en su metabolismo y en concreto en la síntesis de ácidos nucleicos.
+			p La Citarabina o Ara-C es un análogo de la histidina y la desoxicitidina. Produce inhibición de la ADN polimerasa y también puede causar efectos directos sobre diversas quinasas ácidas y ejercer un efecto citotóxico directo sobre ácidos nucleicos. Actúa sobre células en rápida proliferación.
+			p El Metotrexato, MTX, es un compuesto análogo del ácido fólico. El metotrexato tiene una gran semejanza estructural con el ácido dihidrofólico. Se une a la dihidrofolato reductasa, con lo que inhibe el paso de dihidrofolato a tetrahidrofolato. Este último actúa como donante de grupos monocarbonados para la síntesis de purinas y pirimidinas y, por tanto, de los ácidos nucleicos. 
+			p El folinato cálcico se administra para contrarrestar la acción antagónica de los folatos del metotrexato y acelera la recuperación de la mielosupresión o la mucositis inducida por metotrexato.<sup>1</sup>
+			
+			
+			//- imagen o video				
+			div.banner-video.wow.fadeInUp
+				div.imagen
+					div#video
+						figure.galeria
+							a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/leucemia-amgen/images/mod4/001.jpg' data-lightbox='example-1')
+								img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/leucemia-amgen/images/mod4/001.jpg' alt='image-1')
+				div.texto_imagen
+					div.img-footer
+						span Fuente: Randa Hilal-Dandan, Laurence L. Brunton: Goodman & Gilman. Manual de farmacología y terapéutica, 2e:    
+							a(href='https://accessmedicina.mhmedical.com' target='_blank')   www.accessmedicina.com
+							br/ Derechos © McGraw-Hill Education. Derechos Reservados
+			
+
+			h3 Consolidación (intensificación)
+			p Si la leucemia entra en remisión, la siguiente fase con frecuencia consiste en otro curso bastante corto de quimioterapia, usando muchos de los mismos medicamentos que se utilizaron en la terapia de inducción. Esto usualmente dura varios meses. Usualmente los medicamentos se administran en dosis altas, por lo que el tratamiento es bastante intenso
+			
+			h3 Mantenimiento
+			p Después de la consolidación, generalmente el paciente entra en un programa de mantenimiento con quimioterapia que consiste en metotrexato y 6-mercaptopurina (6-MP). En algunos casos, esto se puede combinar con otros medicamentos, como Vincristina y prednisona.
+			
+			
+			
+			
+			
+			
+			div.footnotes
+				p.small  <sup>1</sup>Fármacos Antineoplásicos. J. Bendi.  Ma. Gómez. Facultad de Farmacia UCM.  Revista Farmacia Profesional.  Vol. 20.  Num. 2.  Pags. 60 – 65.  Febrero 2006
+			
+			
+			
+			
+					
+					
+			+progreso-modulo('progreso20')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-4')
+			
+		//- progreso y contador
+		+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=317949&chapterid=9252', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=317949&chapterid=9254', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -1,0 +1,169 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 4', 'Buenas prácticas de farmacia- Preparación de Blinatumomab ')
+			
+			//- banner modulo 4
+			+banner-video('video-mod-4')
+
+				
+			h3 Estabilidad
+			
+			//- Table
+			table.table.table-striped
+				caption Tabla 2. Requisitos de Almacenamiento para BLINCYTO y la Solución Estabilizante IV
+				thead
+					tr
+						th Tiempo de almacenamiento máximo para el vial de BLINCYTO liofilizado y la Solución Estabilizante IV*
+						th(colspan='2') Tiempo de almacenamiento máximo de vial de BLINCYTO reconstituido*
+						th(colspan='2') Tiempo de almacenamiento máximo (incluyendo el tiempo de infusión) de la bolsa IV preparada que contiene la Solución para Infusión de BLINCYTO
+				tbody
+					tr
+						td Temperatura Ambiente hasta 27ºC
+						td Temperatura Ambiente hasta 27ºC
+						td Refrigerado entre 2ºC a 8ºC
+						td Temperatura Ambiente hasta 27ºC
+						td Refrigerado entre 2ºC a 8ºC
+					tr
+						td 8 horas
+						td 4horas
+						td 24 horas
+						td 96 horas*
+						td 10 días*
+					tr
+						td.small(colspan='5') * Durante el almacenamiento, los viales de BLINCYTO y de Solución Estabilizante IV deben protegerse de la luz.
+							br/ Si la bolsa IV que contiene la solución para infusión de BLINCYTO no se administra dentro de los plazos y temperatura indicados, deberá desecharse; no se debe refrigerar nuevamente.
+							
+							
+			h3 Manipulación y preparación:
+			
+			p 1 empaque de BLINCYTO incluye 1 vial de BLINCYTO y 1 vial de solución estabilizante IV. El polvo liofilizado de BLINCYTO se reconstituye con 3 ml de agua estéril para inyección. La solución estabilizante se utiliza para recubrir la bolsa y equipos para la infusión y evitar la adhesión de BLINCYTO a las paredes. NO SE DEBE utilizar la solución estabilizante para la reconstitución de BLINCYTO.  La técnica aséptica debe seguirse de forma estricta cuando se prepare la solución para infusión puesto que los viales de BLINCYTO no contienen conservantes antimicrobianos.
+			p Antes de iniciar la preparación de BLINCYTO debe verificarse la dosis formulada y el tiempo de infusión. De acuerdo a lo anterior, la cantidad adecuada de solución estabilizante deberá ser agregada a la bolsa de 250 ml de SSN (al 0,9%) antes de añadir el BLINCYTO reconstituido. El volumen total de BLINCYTO reconstituido y diluido será superior al volumen que se debe administrar al paciente (240 ml). Esto es así para compensar la pérdida en la línea de infusión intravenosa y para garantizar que el paciente recibe la dosis completa de BLINCYTO... 
+			
+			
+			//- imagen o video				
+			div.banner-video.wow.fadeInUp
+				div.imagen
+					div#video
+						figure.galeria
+							a.example-image-link(href='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/leucemia-amgen/images/mod4/002.jpg' data-lightbox='example-1')
+								img.example-image(src='https://ubosquemoodle.unbosque.edu.co/diseno/cursos/leucemia-amgen/images/mod4/002.jpg' alt='image-1')
+				div.texto_imagen
+					div.img-footer
+						span Adaptado de: Información para prescribir Blincyto® 01Jun2016 –  Instrucciones Especiales de Uso y Manejo
+						
+						
+			p Es importante recordar que para la administración de BLINCYTO se requiere un filtro en línea estéril, no pirógeno y de baja unión a proteínas de 0,2 micras. BLINCYTO es compatible con bolsas de infusión/casetes de bomba de poliolefina, PVC sin dietilhexilftalato (sin DEHP), o etilvinilacetato (EVA). · Especificaciones de la bomba: la bomba de infusión para administrar BLINCYTO debe ser programable, bloqueable y debe tener una alarma. No se deben utilizar bombas elastoméricas.
+			p La purga de los equipos de infusión debe realizarse con la solución ya preparada (SNN + solución estabilizante + BLINCYTO reconstituido), NO SE DEBE purgar los equipos de infusión en el paciente pues se podría administrar un bolo de BLINCYTO de forma inadvertida.
+			
+			p Las instrucciones para la preparación de BLINCYTO deben seguirse de manera estricta para evitar errores de medicación. A continuación se presentan los volúmenes de solución estabilizante y solución reconstituida de BLINCYTO que deberán agregarse a la bolsa de 250 cc de SSN de acuerdo a la dosis diaria y duración de la infusión: 
+						
+			
+			//- Table
+			table.table.table-striped
+				thead
+					tr
+						th Dosis
+						th Duración de la perfusión
+						th Solución salina (bolsa de 250ml)º
+						th Volumen de la solución (estabilizadora) (ml)
+						th Número necesario de viales de BLINCYTO
+						th Solución reconstituida de BLINCYTO (ml)
+						th Velocidad de perfusión (ml/h)
+				tbody
+					tr
+						td(rowspan='4') 9 &micro;g/día
+						td 24 horas
+						td 1
+						td 5,5
+						td 1
+						td 0,83
+						td 10
+					tr
+						td 48 horas
+						td 1
+						td 5,5
+						td 1
+						td 1,7
+						td 5
+					tr
+						td 72 horas
+						td 1
+						td 5,6
+						td 1
+						td 2,5
+						td 3,3
+					tr
+						td 96 horas
+						td 1
+						td 5,6
+						td 2
+						td 3,3
+						td 2,5
+					tr
+						td(rowspan='4') 28 &micro;g/día
+						td 24 horas
+						td 1
+						td 5,6
+						td 1
+						td 2,6
+						td 10
+					tr
+						td 48 horas
+						td 1
+						td 5,6
+						td 2
+						td 5,2
+						td 5
+					tr
+						td 72 horas
+						td 1
+						td 5,7
+						td 3
+						td 8
+						td 3,3
+					tr
+						td 96 horas
+						td 1
+						td 5,7
+						td 4
+						td 10,7
+						td 2,5
+					tr
+						td.small(colspan='7') ºSolución salina (cloruro sódico al 0,9%)
+							br/ Se deben utilizar solo bolsas de perfusión / casetes de bombas de poliolefina, PVC sin dietilhexilftalato (sin DEHP) o estilvinilacetato (EVA) y tubo intravenoso de poliolefina, PVC sin DEHP o EVA con un filtro en línea de 0,2 &micro;m de baja fijación de proteínas, apirógeno y estéril.
+					tr
+						td.small(colspan='7') Adaptado de: Información para prescribir Blincyto® 01Jun2016 
+			
+			
+					
+					
+			+progreso-modulo('progreso70')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-4')
+			
+		//- progreso y contador
+		+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=317949&chapterid=9255', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=317949&chapterid=9257', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			

@@ -1,0 +1,73 @@
+include ../mixins.jade
+
+//- Head html tag
+include ../includes/header.jade
+
+//- Content
+div.curso-cc
+
+	article.content-cc.article
+	
+		//- menu
+		+menu
+	
+		div.container-txt
+	
+			//- titulo modulo
+			+titulos-modulo('Módulo 4', 'Buenas prácticas de farmacia- Preparación de Blinatumomab ')
+			
+			//- banner modulo 4
+			+banner-video('video-mod-4')
+
+				
+			h3 Tasas de respuesta al tratamiento de la ALL
+			
+			p Por lo general, aproximadamente de 80% a 90% de los adultos tendrá remisiones completas en algún momento durante estos tratamientos. Esto significa que ya no se observará la presencia de células leucémicas en la médula ósea. Desafortunadamente, cerca de la mitad de estos pacientes sufren una recaída, por lo que la tasa general de curación es de 30% a 40%. 
+			p Si la leucemia es refractaria, o sea, si no desaparece con el primer tratamiento (lo que sucede en aproximadamente 10% a 20% de los pacientes) ó el paciente recae después de la primera línea, entonces se pueden intentar dosis más intensivas o medicamentos nuevos de quimioterapia, aunque es menos probable que surtan efecto. Los anticuerpos monoclonales, como el blinatumomab (Blincyto) o el inotuzumab ozogamicina (Besponsa, medicamento actualmente no disponible en Colombia), pueden ser una opción para los pacientes con ALL de células B<sup>2</sup>
+			
+			h3 Inmunoterapia
+			
+			p La inmunoterapia es el uso de medicinas para ayudar al propio sistema inmunitario de la persona a reconocer y destruir a las células cancerosas con más eficacia. En la actualidad, se están utilizando algunos tipos de inmunoterapia para tratar la leucemia linfocítica aguda (ALL) en ciertas situaciones.
+			
+			h3 Blinatumomab
+			
+			p El blinatumomab es una clase especial de anticuerpo monoclonal porque se puede adherir a dos proteínas diferentes al mismo tiempo. Una parte del blinatumomab se une a la proteína CD19 que se encuentra en las células B, incluyendo algunas células de leucemia y linfoma. Otra parte se une a CD3, una proteína que se encuentra en las células inmunes llamadas células T. Al unirse a ambas proteínas, este medicamento permite la unión de  las células cancerosas y las células inmunes, lo que  provoca que el sistema inmunitario reconozca y ataque a las células cancerosas.
+			
+			h3 Generalidades de blincyto 
+			
+			p Este medicamento se usa para tratar algunos tipos de leucemia linfocítica aguda de células B, generalmente después de intentar la quimioterapia. Se inyecta en una vena como infusión continua por 28 días. Se puede administrar uno o más ciclos (hasta 5) separados por dos semanas de intervalo sin el medicamento. Debido a ciertos efectos secundarios graves que se producen con mayor frecuencia durante las primeras veces que se administra, generalmente el paciente necesita ser tratado en un hospital o una clínica al menos durante los primeros dos ciclos.
+			p Blinatumomab es el primero de los anticuerpos BiTE comercializados (BiTE: bispecific T cell– engaging single-chain antibodies). Supone un novedoso mecanismo de acción por el cual las propias células T del paciente eliminan las células blásticas. Blinatumomab es un anticuerpo con doble especificidad diseñado para unirse específicamente al CD19, que se expresa sobre la superficie de células de linaje B, y al CD3, que se expresa sobre la superficie de células T. Activa células T endógenas conectando de forma transitoria el CD3 del complejo del receptor de células T (TCR) con el CD19 de las células B benignas y malignas pudiendo una única célula T activada por blinatumomab lisar múltiples células malignas. La actividad antitumoral de blinatumomab no depende de que las células T sean portadoras de un TCR específico ni de los antígenos peptídicos que presentan las células cancerosas, sino que es de naturaleza policlonal e independiente del antígeno leucocitario humano (HLA) de las células diana. Blinatumomab actúa como mediador en la formación de una sinapsis citolítica entre las células T y las células tumorales, liberando enzimas proteolíticas para destruir tanto las células proliferantes como las células diana en reposo. Comporta un aumento transitorio de la producción de las moléculas de adhesión celular, de proteínas citolíticas, la liberación de citoquinas inflamatorias, y la proliferación de células T, y tiene como resultado la eliminación de las células CD19+.
+			p Existe importantes variaciones interindividuales de los parámetros farmacocinéticos, con una media de variabilidad del 40 % en el aclaramiento y de un 50 % en la vida media. Los resultados sugieren que la edad (de 18 a 80 años), el sexo, el peso corporal (de 44 a 134 kg), y el área de superficie corporal (de 1,39 a 2,57 m2) no influyen en la farmacocinética de blinatumomab. Sin embargo, los datos disponibles en adultos con un peso inferior a 45 kg son muy limitados.<sup>3</sup>
+			
+			
+			
+			
+			
+			
+			
+			
+			div.footnotes
+				p.small  <sup>2</sup> Leucemia Linfocítica Aguda en Adultos.  American Cancer Society.  Art. Tratamientos Típicos de la LLA. Octubre, 2018 
+					br/ <sup>3</sup> Informe de Posicionamiento Terapéutico de blinatumomab (Blincyto®) en leucemia linfoblástica aguda con cromosoma Philadelphia negativo en situación de refractariedad o en recaída IPT, 27/2017. V1 Fecha de publicación: 31 de julio de 2017
+			
+			
+			
+			
+					
+					
+			+progreso-modulo('progreso40')
+					
+			
+			//- Material modulo
+			+material-modulo('material-mod-4')
+			
+		//- progreso y contador
+		+paginador('https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=317949&chapterid=9253', 'back', 'Anterior', 'https://ubosquemoodle.unbosque.edu.co/mod/book/view.php?id=317949&chapterid=9255', 'forward', 'Siguiente')
+	
+
+//- Final part of body
+//- Page transitions js
+include ../includes/js-body-ends.jade
+		
+		
+			
